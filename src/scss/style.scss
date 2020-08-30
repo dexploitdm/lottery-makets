@@ -1,22 +1,15 @@
-$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+@import "common/variables";
+@import "common/base";
+@import "common/fonts";
 
-@import "~bootstrap/scss/bootstrap";
+@import "blocks/bottons";
+//forms
+@import "blocks/forms/form";
+@import "blocks/forms/checkbox";
+@import "blocks/forms/input";
+@import "blocks/forms/select";
 
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Roboto-Regular.ttf);
-}
+//Слои
+@import "layers/header";
+@import "layers/footer";
 
-body {
-  font-family: $font-stack;
-  #logo {
-    width: 10rem;
-  }
-  .container {
-    img {
-      width: 20rem;
-    }
-  }
-}
