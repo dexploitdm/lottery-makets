@@ -1,3 +1,21 @@
 body {
-  font-family: $font-stack;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+.box {
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+main {
+  min-height: 90vh;
+}
+.l-hide {
+  display: none;
+}
+.l-bold {
+  font-weight: 700;
 }

@@ -1,0 +1,87 @@
+header {
+  background: $color-primary1;
+}
+.header {
+  &-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+    transition: .3s;
+  }
+  &-base {
+    display: flex;
+    align-items: center;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    &_btn {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+    &-phone {
+      color: #fff;
+      margin-left: 34px;
+      transition: .3s;
+      &_num {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+      }
+      &_desc {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+  &-title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    max-width: 132px;
+    margin-right: 60px;
+    transition: .3s;
+  }
+  &-scores {
+    display: flex;
+    align-items: center;
+    &_text {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      margin-right: 20px;
+    }
+    &_btn {
+
+    }
+  }
+  &-profile {
+    display: flex;
+    align-items: center;
+    &-logo {
+      width: 44px;
+      height: 44px;
+    }
+    &-info {
+      margin-right: 57px;
+      transition: .3s;
+      &-name {
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+      }
+    }
+    &_link {
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration-line: underline;
+      color: #A8BFFF;
+    }
+  }
+}

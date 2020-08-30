@@ -1,7 +1,8 @@
-import jQuery from "jquery";
+import $ from "jquery";
 import popper from "popper.js";
 import bootstrap from "bootstrap";
+import './module/form/select.js';
 
-jQuery(function() {
-  jQuery("body").css("color", "blue");
-});
+
+console.log($('#sources'))
+
