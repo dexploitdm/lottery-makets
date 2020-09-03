@@ -21,3 +21,8 @@
 .l-hide {
   display: none;
 }
+.tablet-hide {
+  @media (max-width: 986px){
+    display: none;
+  }
+}
