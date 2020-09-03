@@ -9,7 +9,7 @@
 
     <title><%=title%></title>
   </head>
-  <body>
+  <body class="drawer drawer--right">
     <header style="    margin-bottom: 20px;
 ">
       <div class="box">
@@ -61,6 +61,19 @@
 <!--              ELSE-->
               <button type="button" class="l-btn l-btn_login l-hide">Вход</button>
             </div>
+
+              <button type="button" class="drawer-toggle drawer-hamburger">
+                  <span class="sr-only">toggle navigation</span>
+                  <span class="drawer-hamburger-icon"></span>
+              </button>
+              <nav class="drawer-nav" role="navigation">
+                  <ul class="drawer-menu">
+                      <li><a class="drawer-brand" href="#">Brand</a></li>
+                      <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+                      <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+                  </ul>
+              </nav>
+
             <div class="header-info-phone">
               <div class="header-info-phone_num">8 (800) 945 85 76</div>
               <div class="header-info-phone_desc">Звонок по России бесплатный</div>
