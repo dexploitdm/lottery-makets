@@ -10,7 +10,8 @@
     <title><%=title%></title>
   </head>
   <body>
-    <header>
+    <header style="    margin-bottom: 20px;
+">
       <div class="box">
         <div class="header-layout">
 
@@ -32,20 +33,22 @@
           <div class="header-info">
 
 <!--            IS AUTH-->
-            <div class="header-scores">
-              <div class="header-scores_text">Остаток баллов: <span class="l-bold">300</span></div>
-              <div class="header-scores_btn">
-                <button type="button" class="l-btn l-btn-blue">Пополнить</button>
-              </div>
-            </div>
-            <div class="header-profile">
-              <div class="header-profile-logo">
+            <div class="header-info-box">
+                <div class="header-scores">
+                    <div class="header-scores_text">Остаток баллов: <span class="l-bold">300</span></div>
+                    <div class="header-scores_btn">
+                        <button type="button" class="l-btn l-btn-blue">Пополнить</button>
+                    </div>
+                </div>
+                <div class="header-profile">
+                    <div class="header-profile-logo">
 
-              </div>
-              <div class="header-profile-info">
-                <div class="header-profile-info-name">Иванов Иван</div>
-                <a href="#" class="header-profile_link">Личный кабинет</a>
-              </div>
+                    </div>
+                    <div class="header-profile-info">
+                        <div class="header-profile-info-name">Иванов Иван</div>
+                        <a href="#" class="header-profile_link">Личный кабинет</a>
+                    </div>
+                </div>
             </div>
 <!--            ELSE-->
             <div class="header-info_btn l-hide">
@@ -66,4 +69,61 @@
 
         </div>
       </div>
+    </header>
+    <header>
+        <div class="box">
+            <div class="header-layout">
+
+                <div class="header-base">
+                    <div class="header-title">Розыгрыш конкурсов</div>
+                    <div class="header-select">
+
+                        <div class="center">
+                            <select name="sources" id="sources" class="custom-select sources" placeholder="Пермь">
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Eкатеринбург">Eкатеринбург</option>
+                                <option value="Пермь">Пермь</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="header-info">
+
+                    <!--            IS AUTH-->
+                    <div class="header-scores l-hide">
+                        <div class="header-scores_text">Остаток баллов: <span class="l-bold">300</span></div>
+                        <div class="header-scores_btn">
+                            <button type="button" class="l-btn l-btn-blue">Пополнить</button>
+                        </div>
+                    </div>
+                    <div class="header-profile l-hide">
+                        <div class="header-profile-logo">
+
+                        </div>
+                        <div class="header-profile-info">
+                            <div class="header-profile-info-name">Иванов Иван</div>
+                            <a href="#" class="header-profile_link">Личный кабинет</a>
+                        </div>
+                    </div>
+                    <!--            ELSE-->
+                    <div class="header-info_btn">
+                        <button type="button" class="l-btn l-btn_reg">Регистрация</button>
+                    </div>
+
+                    <div class="header-info_btn">
+                        <!--              IS AUTH-->
+                        <button type="button" class="l-btn l-btn_login l-btn_login_l1 l-hide">Выход</button>
+                        <!--              ELSE-->
+                        <button type="button" class="l-btn l-btn_login ">Вход</button>
+                    </div>
+                    <div class="header-info-phone">
+                        <div class="header-info-phone_num">8 (800) 945 85 76</div>
+                        <div class="header-info-phone_desc">Звонок по России бесплатный</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </header>

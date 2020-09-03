@@ -11,8 +11,21 @@
 .custom-select {
   position: relative;
   display: inline-block;
+  &:before {
+    content: '';
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 16.05C4.01 16.05 0 9.542 0 6C0 2.686 2.686 0 6 0C9.314 0 12 2.686 12 6C12 9.543 7.99 16.05 6 16.05ZM6 4.076C4.905 4.084 4.023 4.976 4.028 6.071C4.033 7.166 4.924 8.051 6.018 8.048C7.115 8.045 8 7.157 8 6.062C7.998 5.532 7.786 5.027 7.41 4.655C7.036 4.282 6.53 4.075 6 4.075V4.076Z' fill='%23526CB3'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    width: 12px;
+    height: 16px;
+    top: 14px;
+    left: 10px;
+    z-index: 1;
+  }
 }
 .custom-select-trigger {
+  padding: 0 0 0 28px;
+  min-width: 163px;
   font-size: 18px;
   color: #404040;
   line-height: 48px;
@@ -20,11 +33,20 @@
   position: relative;
   display: block;
   width: auto;
-  padding: 0 84px 0 22px;
   border-radius: 4px;
   cursor: pointer;
   max-height: 48px;
   overflow: hidden;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 48px;
+    width: 40px;
+    background-color: white;
+    right: 0;
+    z-index: 0;
+    box-shadow: -3px 0px 20px 7px white;
+  }
 }
 .custom-select-trigger:after {
   position: absolute;
@@ -100,8 +122,6 @@
   padding: 0 22px;
   border-bottom: 1px solid #b5b5b5;
   font-size: 18px;
-  font-weight: 600;
-  color: #b5b5b5;
   line-height: 47px;
   cursor: pointer;
   transition: all .4s ease-in-out;

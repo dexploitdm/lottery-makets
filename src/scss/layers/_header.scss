@@ -37,6 +37,12 @@ header {
         line-height: 16px;
       }
     }
+    .l-btn_reg {
+      margin-right: 20px;
+    }
+    &-box {
+      display: flex;
+    }
   }
   &-title {
     font-weight: 900;
@@ -50,6 +56,8 @@ header {
   &-scores {
     display: flex;
     align-items: center;
+    margin-right: 42px;
+    transition: .3s;
     &_text {
       font-weight: normal;
       font-size: 18px;
@@ -67,6 +75,10 @@ header {
     &-logo {
       width: 44px;
       height: 44px;
+      background-image: url("data:image/svg+xml,%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.38705 37.184C8.27901 37.7256 7.75235 38.0771 7.21074 37.9691C6.66913 37.861 6.31765 37.3344 6.4257 36.7927L7.20323 32.8952C7.81292 29.839 10.3696 27.5539 13.4748 27.2898C15.7501 27.0963 18.5907 27 22 27C25.4093 27 28.2499 27.0963 30.5252 27.2898C33.6304 27.5539 36.1871 29.839 36.7968 32.8952L37.5743 36.7927C37.6823 37.3344 37.3309 37.861 36.7893 37.9691C36.2477 38.0771 35.721 37.7256 35.6129 37.184L34.8354 33.2865C34.3999 31.1035 32.5737 29.4713 30.3557 29.2826C28.1434 29.0945 25.357 29 22 29C18.643 29 15.8566 29.0945 13.6443 29.2826C11.4263 29.4713 9.60008 31.1035 9.16459 33.2865L8.38705 37.184ZM16 16C16 19.3087 18.6892 22 22 22C25.3087 22 28 19.3108 28 16C28 12.6913 25.3108 10 22 10C18.6913 10 16 12.6892 16 16ZM14 16C14 11.5843 17.587 8 22 8C26.4157 8 30 11.587 30 16C30 20.4157 26.413 24 22 24C17.5843 24 14 20.413 14 16ZM2 22C2 33.0473 10.9534 42 22 42C33.0473 42 42 33.0466 42 22C42 10.9527 33.0466 2 22 2C10.9527 2 2 10.9534 2 22ZM0 22C0 9.84887 9.84805 0 22 0C34.1511 0 44 9.84805 44 22C44 34.1511 34.152 44 22 44C9.84887 44 0 34.152 0 22Z' fill='%23A8BFFF'/%3E%3C/svg%3E%0A");
+      background-size: cover;
+      margin-right: 9px;
+      transition: .3s;
     }
     &-info {
       margin-right: 57px;
@@ -82,6 +94,54 @@ header {
       line-height: 19px;
       text-decoration-line: underline;
       color: #A8BFFF;
+      &:hover {
+        color: #fff;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px){
+  .header {
+    &-title {
+      margin-right: 30px;
+    }
+    &-profile-info {
+      margin-right: 14px;
+    }
+    &-scores {
+      margin-right: 16px;
+    }
+  }
+}
+@media (max-width: 1280px){
+  .header {
+    &-layout {
+      padding: 26px 0;
+    }
+    &-scores {
+      display: block;
+      text-align: center;
+      &_text {
+        margin-right: 0;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1140px){
+  .header {
+    &-info {
+      &-box {
+        display: block;
+      }
+    }
+    &-scores {
+      margin-bottom: 10px;
+      &_text {
+
+      }
     }
   }
 }
