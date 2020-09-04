@@ -1,7 +1,10 @@
-header {
-  background: $color-primary1;
-}
+//header {
+//
+//}
 .header {
+  &-box {
+    background: $color-primary1;
+  }
   &-layout {
     display: flex;
     justify-content: space-between;
@@ -100,6 +103,43 @@ header {
       }
     }
   }
+  &-menu {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    &-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &-item {
+      width: inherit;
+      text-align: center;
+      margin-bottom: -2px;
+    }
+    &_link {
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #404040;
+      padding: 14px 0;
+      display: block;
+      transition: .3s;
+      &.active {
+        border-bottom: 3px solid #A8BFFF;
+      }
+      &:hover {
+        color: $color-primary1;
+        text-decoration: none;
+      }
+    }
+    @media (max-width: 1120px) {
+      &_link {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 986px) {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1400px){
@@ -139,8 +179,76 @@ header {
     }
     &-scores {
       margin-bottom: 10px;
-      &_text {
-
+    }
+  }
+}
+@media (max-width: 768px){
+  .header {
+    &-layout {
+      padding: 10px 0;
+    }
+    &-select {
+      margin-top: -10px;
+    }
+  }
+}
+//Mobile menu
+.header-drawer {
+  //color: #404040;
+  .header-profile {
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    &-info {
+      margin-right: 0;
+      &-name {
+        color: #404040;
+      }
+    }
+    &_link {
+      &:hover {
+        color: #404040;
+      }
+    }
+  }
+  .header-scores {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-right: 0;
+    border-bottom: 1px solid $color-primary1;
+    &_text {
+      color: #404040;
+    }
+    &_btn {
+      .l-btn {
+        &:hover {
+          background: $color-primary1;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .header-info {
+    &_btn {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &-phone {
+      position: absolute;
+      bottom: 20px;
+      margin: auto;
+      text-align: center;
+      left: 0;
+      right: 0;
+      color: #404040;
+    }
+  }
+  .drawer-menu {
+    .header-menu_link {
+      &.active {
+        border-bottom: 0;
+        background: #a8bfff;
+        color: #fff;
       }
     }
   }

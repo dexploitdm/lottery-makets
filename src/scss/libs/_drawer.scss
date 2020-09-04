@@ -112,6 +112,8 @@
 .drawer--right.drawer-open .drawer-hamburger {
   right: 16.25rem;
   position: fixed;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
 }
 
 .drawer-hamburger {
@@ -126,7 +128,7 @@
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   border: 0;
-  outline: 0;
+  outline: none;
   background-color: transparent;
   display: none;
   @media (max-width: 986px){
@@ -150,7 +152,7 @@
   height: 2px;
   -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
   transition: all .6s cubic-bezier(.19, 1, .22, 1);
-  background-color: #222
+  background-color: #fff;
 }
 
 .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
@@ -165,7 +167,11 @@
 }
 
 .drawer-open .drawer-hamburger-icon {
-  background-color: transparent
+  background-color: transparent;
+  &:before,
+  &:after {
+    background-color: #000;
+  }
 }
 
 .drawer-open .drawer-hamburger-icon:after, .drawer-open .drawer-hamburger-icon:before {
