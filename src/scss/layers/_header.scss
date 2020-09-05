@@ -123,8 +123,19 @@
       padding: 14px 0;
       display: block;
       transition: .3s;
-      &.active {
-        border-bottom: 3px solid #A8BFFF;
+      position: relative;
+      &.active,
+      &:hover {
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 3px;
+          left: 0;
+          right: 0;
+          background-color: #A8BFFF;
+        }
       }
       &:hover {
         color: $color-primary1;
@@ -245,8 +256,11 @@
   }
   .drawer-menu {
     .header-menu_link {
-      &.active {
-        border-bottom: 0;
+      &.active,
+      &:hover{
+        &:before {
+          content: none;
+        }
         background: #a8bfff;
         color: #fff;
       }
