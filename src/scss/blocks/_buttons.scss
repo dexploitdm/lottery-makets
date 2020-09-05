@@ -68,6 +68,13 @@
       background: #fff;
     }
   }
+  &-orange {
+    background: #FFB800;
+    color: #FFFFFF;
+    &:hover {
+      background: $color-primary1;
+    }
+  }
 }
 button:focus{
   outline: none;
