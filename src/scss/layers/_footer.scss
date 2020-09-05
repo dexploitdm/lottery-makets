@@ -3,7 +3,8 @@ footer {
 }
 .footer {
   &-layout {
-    padding: 46px 0;
+    padding-top: 46px;
+    padding-bottom: 46px;
     transition: .3s;
   }
   &-box {
@@ -14,6 +15,8 @@ footer {
     font-size: 14px;
     line-height: 16px;
     color: #404040;
+    margin-top: -16px;
+    transition: .3s;
   }
   &-title {
     font-weight: 900;
@@ -25,8 +28,32 @@ footer {
   }
   &-menu {
     display: flex;
+    padding-right: 10px;
     &-link {
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration-line: underline;
+      color: #526CB3;
       display: block;
+      border-right: 1px solid #526CB3;
+      padding-top: 6px;
+      padding-bottom: 2px;
+      padding-right: 32px;
+      transition: .3s;
+      &:hover {
+        color: #404040;
+      }
+    }
+    &-col {
+      &:not(first-child){
+        padding-left: 32px;
+      }
+      &:last-child {
+        .footer-menu-link {
+          border-right: none;
+          padding-right: 0;
+        }
+      }
     }
   }
   &-info {
