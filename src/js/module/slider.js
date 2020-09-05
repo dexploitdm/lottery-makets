@@ -1,8 +1,8 @@
 import $ from "jquery";
 
 var stickersSlider = new Swiper('.stickers-slider', {
-    slidesPerView: 3,
-    spaceBetween: 0,
+    slidesPerView: 1,
+    spaceBetween: 55,
     preventClicks: false,
     preventClicksPropagation: false,
     navigation: {
@@ -17,10 +17,13 @@ var stickersSlider = new Swiper('.stickers-slider', {
         dragSize: 30
     },
     breakpoints: {
-        1050: {
+        1260: {
             slidesPerView: 5
         },
-        640: {
+        1050: {
+            slidesPerView: 4
+        },
+        768: {
             slidesPerView: 3
         },
         320: {

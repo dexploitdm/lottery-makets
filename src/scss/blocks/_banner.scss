@@ -1,0 +1,24 @@
+.l-ba {
+  padding-top: 54px;
+  padding-bottom: 60px;
+  transition: .3s;
+  &-layout {
+    &_bg {
+      height: 340px;
+      background-size: cover;
+      box-sizing: border-box;
+      background-position: center;
+    }
+    border-radius: 20px;
+    border: 2px solid #DBE6FF;
+    overflow: hidden;
+  }
+  @media (max-width: 968px) {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 968px) {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+}

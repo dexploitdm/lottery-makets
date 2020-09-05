@@ -9,6 +9,7 @@ import drawer from "jquery-drawer";
 
 import './module/form/select.js';
 import './module/slider.js';
+import './module/stickers.js';
 
 
 $(document).ready(function() {

@@ -10,6 +10,10 @@
 @import "blocks/forms/checkbox";
 @import "blocks/forms/input";
 @import "blocks/forms/select";
+@import "blocks/slider";
+@import "blocks/stickers";
+@import "blocks/banner";
+@import "blocks/icons";
 
 //Слои
 @import "layers/header";
@@ -17,6 +21,7 @@
 
 //libs
 @import "libs/drawer";
+@import "libs/swiper";
 
 .l-hide {
   display: none;
