@@ -28,3 +28,9 @@ main {
 .l-bold {
   font-weight: 700;
 }
+@media (min-width: 1120px) {
+  .col-lg-offset{
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

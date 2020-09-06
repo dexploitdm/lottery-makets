@@ -7,14 +7,33 @@
     justify-content: center;
     border-bottom: 1px solid #DBE6FF;
     padding-bottom: 15px;
+    margin-bottom: 30px;
+    transition: .3s;
 
     &-item {
       font-size: 18px;
       line-height: 21px;
       color: #526CB3;
+      border: 0;
+      background: none;
+      padding-right: 20px;
+      position: relative;
+      .f-icon {
+        position: absolute;
+        right: -2px;
+        top: 4px;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.8015 11.0516C8.35278 11.4704 7.65627 11.4699 7.20817 11.0504L3.66866 7.73712C3.26546 7.35969 3.24458 6.72687 3.622 6.32368C3.81122 6.12155 4.07577 6.00691 4.35265 6.00708C5.61023 6.00784 6.82029 6.0086 7.98281 6.00936C9.15341 6.01013 10.3808 6.0109 11.665 6.01168C12.2173 6.01201 12.6647 6.45999 12.6644 7.01228C12.6643 7.28925 12.5492 7.55374 12.3467 7.74273L8.8015 11.0516Z' fill='%23526CB3'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+        transition: .3s;
+        &-up {
+          transform: rotate(180deg);
+        }
+      }
 
       &:not(last-child) {
-        margin-right: 40px;
+        margin-right: 20px;
         transition: .3s;
       }
     }
@@ -22,6 +41,8 @@
   &-box {
     display: grid;
   }
-
+  &-item {
+    margin-bottom: 20px;
+  }
 
 }

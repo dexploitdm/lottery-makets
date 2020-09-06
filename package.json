@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   },
