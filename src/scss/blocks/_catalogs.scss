@@ -1,0 +1,27 @@
+.catalogs {
+  padding-bottom: 100px;
+  transition: .3s;
+
+  &-filter {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #DBE6FF;
+    padding-bottom: 15px;
+
+    &-item {
+      font-size: 18px;
+      line-height: 21px;
+      color: #526CB3;
+
+      &:not(last-child) {
+        margin-right: 40px;
+        transition: .3s;
+      }
+    }
+  }
+  &-box {
+    display: grid;
+  }
+
+
+}

@@ -192,6 +192,22 @@ title: "Розыгрыш конкурсов | Главная"
             <div class="l-ba-layout_bg" style="background-image: url('./img/covers/home-cover.png');"></div>
         </div>
     </section>
+    <section class="catalogs">
+        <div class="box">
+            <div class="catalogs-layout">
+                <div class="catalogs-filter">
+                    <div class="catalogs-filter-item js-filter-set">Популярные</div>
+                    <div class="catalogs-filter-item js-filter-set">Ближайшие</div>
+                    <div class="catalogs-filter-item js-filter-set">Репост</div>
+                    <div class="catalogs-filter-item js-filter-set">По ставке</div>
+                    <div class="catalogs-filter-item js-filter-set">По местам</div>
+                </div>
+                <div class="catalogs-box" data-count="15">
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 </main>
 <%= _.template(require('./../includes/footer.html').default)(data) %>
