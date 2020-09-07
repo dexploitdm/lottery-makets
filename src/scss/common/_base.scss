@@ -35,3 +35,26 @@ main {
     max-width: 20%;
   }
 }
+.preview {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+  transition: .3s;
+  &-title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #404040;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  li {
+    padding-bottom: 20px;
+    &.child {
+      padding-bottom: 10px;
+      a {
+        color: #526cb3;
+      }
+    }
+  }
+}

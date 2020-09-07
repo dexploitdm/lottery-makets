@@ -5,6 +5,32 @@
   */
 
 /*!
+ * Isotope PACKAGED v3.0.6
+ *
+ * Licensed GPLv3 for open source use
+ * or Isotope Commercial License for commercial use
+ *
+ * https://isotope.metafizzy.co
+ * Copyright 2010-2018 Metafizzy
+ */
+
+/*!
+ * Isotope v3.0.6
+ *
+ * Licensed GPLv3 for open source use
+ * or Isotope Commercial License for commercial use
+ *
+ * https://isotope.metafizzy.co
+ * Copyright 2010-2018 Metafizzy
+ */
+
+/*!
+ * Outlayer v2.1.1
+ * the brains and guts of a layout library
+ * MIT license
+ */
+
+/*!
  * Sizzle CSS Selector Engine v2.3.5
  * https://sizzlejs.com/
  *
@@ -28,6 +54,16 @@
  *
  * Date: 2020-05-04T22:49Z
  */
+
+/*!
+ * jquery-drawer v3.2.2
+ * Flexible drawer menu using jQuery, iScroll and CSS.
+ * http://git.blivesta.com/drawer
+ * License : MIT
+ * Author : blivesta <design@blivesta.com> (http://blivesta.com/)
+ */
+
+/*! iScroll v5.2.0 ~ (c) 2008-2016 Matteo Spinelli ~ http://cubiq.org/license */
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.

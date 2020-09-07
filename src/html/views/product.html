@@ -1,0 +1,30 @@
+<% var data = {
+title: "Розыгрыш конкурсов | Главная"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+
+<section class="product">
+    <div class="box">
+        <h1 class="product-title">Название товара. Стандартная длина названия в 2 строки</h1>
+        <div class="product-info">
+            <div class="product-info-thumb">
+                <div class="product-info-thumb-img active">
+                    <img src="img/demo/pre.png" />
+                </div>
+                <div class="product-info-thumb-img">
+                    <img src="img/demo/min2.png" />
+                </div>
+            </div>
+            <div class="product-info-cover">
+                <img src="img/demo/pre.png" />
+            </div>
+            <div class="product-tabs">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
