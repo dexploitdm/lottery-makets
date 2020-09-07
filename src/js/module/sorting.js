@@ -5,9 +5,10 @@ $(document).ready(function() {
     var $grid = $('.catalogs-row').isotope({
         itemSelector: '.col-media',
         layoutMode: 'fitRows',
+        sortBy: 'date',
         getSortData: {
             fileby:   '.file-by',
-            filedate: '[data-ticks]',
+            //filedate: '[data-ticks]',
             repost: function( itemElem ) {
                 var repost = $( itemElem ).attr('data-repost');
                 return parseInt( repost );
@@ -19,6 +20,14 @@ $(document).ready(function() {
             places: function( itemElem ) {
                 var places = $( itemElem ).attr('data-places');
                 return parseInt( places );
+            },
+            date: function (itemElem) {
+                var date = $(itemElem).find('.catalog-date').text();
+                var   dateArray = date.split('.');
+                var    year = dateArray[2];
+                var   month = dateArray[0];
+                var     day = dateArray[1];
+                return new Date(year, month, day);
             }
         }
     });
