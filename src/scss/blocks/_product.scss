@@ -44,6 +44,7 @@
     &-cover {
       width: 100%;
       max-width: 700px;
+      min-width: 700px;
       min-height: 655px;
       background: #EEF3FF;
       border-radius: 6px;
@@ -64,8 +65,40 @@
     }
   }
   &-tabs {
-
+    width: 100%;
+    margin-left: 22px;
+    transition: .3s;
+    .nav-tabs {
+      border-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+    .nav-link {
+      font-size: 24px;
+      line-height: 28px;
+      color: #838383;
+      border: 0;
+      padding: 0 0 4px;
+      transition: .3s;
+      &:not(last-child){
+        margin-right: 22px;
+      }
+      &.active {
+        font-size: 32px;
+        line-height: 37px;
+        color: #404040;
+        border: 0;
+        border-bottom: 3px solid #A8BFFF;
+      }
+    }
+    .tab-content {
+      font-size: 18px;
+      line-height: 28px;
+      color: #404040;
+      margin-top: 22px;
+    }
   }
+
 
 
 

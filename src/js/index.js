@@ -10,6 +10,7 @@ import './module/form/select.js';
 import './module/slider.js';
 import './module/stickers.js';
 import './module/sorting.js';
+import './module/media/productImage';
 
 
 $(document).ready(function() {
