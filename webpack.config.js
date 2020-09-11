@@ -110,6 +110,10 @@ const config = {
           from: "./src/uploads",
           to: "./uploads",
         },
+        {
+          from: "./src/js/components",
+          to: "./js/module",
+        },
       ],
     }),
   ].concat(htmlPlugins),
