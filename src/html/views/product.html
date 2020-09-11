@@ -84,6 +84,20 @@ title: "Розыгрыш конкурсов | Главная"
         <div class="places">
             <h2 class="places-title">Занять место</h2>
             <div class="places-box">
+                <div class="places-layout">
+
+                </div>
+                <div class="js-more">еще</div>
+
+                <div class="paginate">
+
+                </div>
+                <div class="places-count">
+                    <button class="js-count-s" data-count="15">15</button>
+                    <button class="js-count-s" data-count="30">30</button>
+                    <button class="js-count-s" data-count="45">45</button>
+
+                </div>
 
             </div>
         </div>
@@ -91,4 +105,4 @@ title: "Розыгрыш конкурсов | Главная"
 </section>
 
 </main>
-<%= _.template(require('./../includes/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/footer-product.html').default)(data) %>
