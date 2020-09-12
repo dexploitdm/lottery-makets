@@ -101,6 +101,17 @@
       background: $color-primary1;
     }
   }
+  &-red {
+    background: #D23B3B;
+    color: #FFFFFF;
+  }
+  &-green {
+    background: #62AE00;
+    color: #FFFFFF;
+    &:hover {
+      background: #F4BF1A;
+    }
+  }
 
 }
 button:focus{

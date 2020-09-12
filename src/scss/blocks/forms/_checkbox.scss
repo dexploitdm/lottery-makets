@@ -50,6 +50,10 @@
     a {
       color: #526cb3;
       text-decoration: underline;
+      transition: .3s;
+      &:hover {
+        color: #ffb800;
+      }
     }
   }
 }

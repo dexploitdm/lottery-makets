@@ -13,6 +13,7 @@ import './module/sorting.js';
 import './module/media/productImage';
 import './module/countdown';
 import './module/form/checkAgree';
+import './module/modals/modalProduct';
 
 $(document).ready(function() {
     $('.drawer').drawer();
