@@ -11,6 +11,7 @@ import './module/slider.js';
 import './module/stickers.js';
 import './module/sorting.js';
 import './module/media/productImage';
+import './module/countdown';
 
 
 $(document).ready(function() {

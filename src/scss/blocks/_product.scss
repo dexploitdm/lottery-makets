@@ -44,7 +44,6 @@
     &-cover {
       width: 100%;
       max-width: 700px;
-      min-width: 700px;
       min-height: 655px;
       background: #EEF3FF;
       border-radius: 6px;
@@ -60,6 +59,7 @@
         left: 0;
         margin: auto;
         max-width: 670px;
+        width: 100%;
         transition: .3s;
       }
     }
@@ -111,6 +111,7 @@
       max-width: 218px;
       min-height: 122px;
       width: 100%;
+      margin-bottom: 20px;
       transition: .3s;
       &:not(:last-child){
         margin-right: 22px;
@@ -171,13 +172,118 @@
       margin-left: 16px;
     }
   }
+  @media (max-width: 1200px) {
+    &-tabs {
+      .nav-link {
+        font-size: 22px;
 
+        &:not(:last-child) {
+          margin-right: 18px;
+        }
 
+        &.active {
+          font-size: 26px;
+          line-height: normal;
+        }
+      }
+      .tab-content {
+        margin-top: 0;
+      }
+    }
+    .nav-tabs .nav-item {
+      margin-bottom: 16px;
+    }
+    &-info {
+      &-cover {
+        min-height: 400px;
+      }
+    }
+  }
+  @media (max-width: 986px) {
+    &-title {
+      font-size: 30px;
+      line-height: normal;
+    }
+    &-info {
+      flex-wrap: wrap;
+      &-thumb {
+        flex-basis: 14%;
+      }
+      &-cover {
+        flex-basis: 86%;
+        margin-left: auto;
+        margin-right: 0;
+        min-height: 100%;
+        height: fit-content;
+        overflow: hidden;
+        text-align: center;
+        img {
+          height: 100%;
+          position: inherit;
+        }
+      }
+    }
+    &-tabs {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    &-title {
+      font-size: 28px;
+      line-height: normal;
+    }
+    &-info {
+      padding-top: 16px;
+      &-cover {
+        flex-basis: 100%;
+      }
+      &-thumb {
+        order: 2;
+        flex-basis: 100%;
+        margin-top: 16px;
+        display: flex;
+        &-img {
+          min-width: 100%;
+          margin-right: 20px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-tabs {
+      order: 3;
+    }
+    &-desc {
+      justify-content: space-evenly;
+      &-item:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    &-tabs .nav-link {
+      font-size: 18px;
+      &.active {
+        font-size: 22px;
+      }
+    }
+    &-desc {
+      padding-top: 16px;
+      &-item {
+        max-width: 100%;
+      }
+    }
+    &-timer {
+      max-width: 100%;
+    }
+  }
 
 
 }
 .places {
-  padding-top: 60px;
+  padding-top: 40px;
   transition: .3s;
   &-title {
     margin-bottom: 20px;
@@ -285,4 +391,14 @@
       display: none;
     }
   }
+  @media (max-width: 768px) {
+    padding-top: 20px;
+    &-box {
+      padding: 20px;
+    }
+    &-more {
+      padding-top: 20px;
+    }
+  }
+
 }
