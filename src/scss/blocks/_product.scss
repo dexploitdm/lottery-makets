@@ -180,24 +180,109 @@
   padding-top: 60px;
   transition: .3s;
   &-title {
-
+    margin-bottom: 20px;
+  }
+  &-box {
+    border: 1px solid #526CB3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 30px;
+    transition: .3s;
   }
   &-layout {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: -8px;
+    margin-left: -7px;
+    margin-right: -7px;
+    transition: .3s;
   }
   &-item {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #526CB3;
     max-width: 60px;
-    min-height: 60px;
+    height: 60px;
     width: 100%;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    background-color: #bbbbbb94;
+    margin: 8px;
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+    &:hover {
+      background: #F4BF1A;
+      color: #fff;
+    }
+    .number {
+      padding-top: 8px;
+    }
+    [data-c="false"] {
+      .number {
+        padding-top: 15px;
+      }
+    }
+    [data-c="true"] {
+      .number {
+        position: relative;
+        z-index: 9;
+        font-size: 10px;
+        line-height: 10px;
+        text-align: center;
+        color: #404040;
+        top: 4px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: #fff;
+          z-index: -1;
+          border-radius: 50%;
+          border: 1px solid #526cb3;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+        }
+        span {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 3px;
+          bottom: 0;
+        }
+      }
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
-
+  &-more {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding-top: 52px;
+    padding-bottom: 16px;
+    transition: .3s;
+    .l-btn {
+      width: 100%;
+    }
+  }
+  [data-c="false"]{
+    img {
+      display: none;
+    }
+  }
 }

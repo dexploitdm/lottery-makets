@@ -20,16 +20,14 @@ export function placesDataInit(dataPlaces){
         for (let i = 0; i < countPage; i++) {
             if(dataPlaces.data[i]){
                 placesBox.append('<div class="places-item" data-place="'+dataPlaces.data[i].place+'">' +
-                    '<div data-c="'+dataPlaces.data[i].target+'"><p>' + dataPlaces.data[i].place + '</p>' +
-                    '<img scr="" /></div></div>');
+                    '<div data-c="'+dataPlaces.data[i].target+'"><div class="number"><span>' + dataPlaces.data[i].place + '</span></div>' +
+                    '<img src="img/demo/'+ dataPlaces.data[i].logo +'" /></div></div>');
             }
-
-
         }
         //Пагинация
-        $('.paginate').html('');
+        $('.paginate1').html('');
         for (let i = 1; i < (AllPage +1); i++) {
-            $('.paginate').append('<button class="paginate-item" data-page="'+i+'">' + i + '</button>')
+            $('.paginate1').append('<button class="paginate-item" data-page="'+i+'">' + i + '</button>')
         }
 
         $('.paginate-item').click(function() {
@@ -41,8 +39,8 @@ export function placesDataInit(dataPlaces){
             placesBox.html('');
             for (let i = dataStart; i < data; i++) {
                 placesBox.append('<div class="places-item" data-place="'+dataPlaces.data[i].place+'">' +
-                    '<div data-c="'+dataPlaces.data[i].target+'"><p>' + dataPlaces.data[i].place + '</p>' +
-                    '<img scr="" /></div></div>')
+                    '<div data-c="'+dataPlaces.data[i].target+'"><div class="number"><span>' + dataPlaces.data[i].place + '</span></div>' +
+                    '<img src="img/demo/'+ dataPlaces.data[i].logo +'" /></div></div>');
             }
             // console.log(dataPlaces)
         });
