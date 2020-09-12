@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 $(document).ready(function() {
-    const timeDate = $('.js-product-time').attr('data-countdown');
+    const timeDate = $('.js-product-time');
     if(timeDate.length >0){
         const second = 1000,
             minute = second * 60,
@@ -9,7 +9,7 @@ $(document).ready(function() {
             day = hour * 24;
 
 
-        let countDown = new Date(timeDate).getTime(),
+        let countDown = new Date(timeDate.attr('data-countdown')).getTime(),
             x = setInterval(function() {
 
                 let now = new Date().getTime(),
