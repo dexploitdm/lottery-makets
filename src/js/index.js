@@ -19,7 +19,4 @@ $(document).ready(function() {
     $('.drawer').drawer();
 });
 
-$(document).ready(function() {
-    $("#winForRepost").modal('show');
-})
 
