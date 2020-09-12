@@ -1,0 +1,84 @@
+    <footer>
+        <div class="footer-layout box">
+            <div class="footer-box">
+                <div class="footer-title">Розыгрыш конкурсов</div>
+                <div class="footer-menu">
+                    <div class="footer-menu-col">
+                        <a href="#" class="footer-menu-link">Вход</a>
+                        <a href="#" class="footer-menu-link">Регистрация</a>
+                        <a href="#" class="footer-menu-link">Личный кабинет</a>
+                    </div>
+                    <div class="footer-menu-col">
+                        <a href="#" class="footer-menu-link">Начать</a>
+                        <a href="#" class="footer-menu-link">Аукционы</a>
+                        <a href="#" class="footer-menu-link">Личный Победители</a>
+                    </div>
+                    <div class="footer-menu-col">
+                        <a href="#" class="footer-menu-link">Помощь</a>
+                        <a href="#" class="footer-menu-link">Доставка</a>
+                        <a href="#" class="footer-menu-link">Задать вопрос</a>
+                    </div>
+                    <div class="footer-menu-col">
+                        <a href="#" class="footer-menu-link">О нас</a>
+                        <a href="#" class="footer-menu-link">Пользовательское<br /> соглашение</a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-payment">
+                        <div class="footer-payment-methods">
+                            <img src="./img/icons/payment/visa.svg" />
+                            <img src="./img/icons/payment/master.svg" />
+                            <img src="./img/icons/payment/webmany.svg" />
+                            <img src="./img/icons/payment/qiwi.svg" />
+                            <img src="./img/icons/payment/yandex.svg" />
+                        </div>
+                        <div class="footer-payment-btn">
+                            <button type="button" class="l-btn l-btn-orange">Пополнить баланс</button>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-contact-phone">8 (800) 945 85 76</div>
+                        <div class="footer-contact-text">
+                            Звонок по России бесплатный
+                        </div>
+                        <div class="footer-contact-soc">
+                            <div class="footer-contact-soc-item">
+                                <a href="#" class="soc-icon soc-icon_vk"></a>
+                            </div>
+                            <div class="footer-contact-soc-item">
+                                <a href="#" class="soc-icon soc-icon_fb"></a>
+                            </div>
+                            <div class="footer-contact-soc-item">
+                                <a href="#" class="soc-icon soc-icon_inst"></a>
+                            </div>
+                            <div class="footer-contact-soc-item">
+                                <a href="#" class="soc-icon soc-icon_yo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-c">
+                © “Розыгрыш конкурсов”, 2019, Сайт интернет-аукционов
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bundle.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#betWin").modal('show');
+        })
+        //Mock
+        for (let i = 1; i < 86; i++) {
+            let isBusy = false;
+            if(i === 3 || i === 41){
+                isBusy = true
+            }
+            $('.places-layout').append('<div class="places-item" data-place="'+i+'">' +
+                '<div class="place" data-c="'+isBusy+'"><div class="number"><span>'+i+'</span></div>' +
+                '<img src="img/demo/face1.png" /></div></div>');
+        }
+    </script>
+  </body>
+</html>

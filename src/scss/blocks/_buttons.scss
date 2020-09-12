@@ -71,6 +71,10 @@
   &-blue-dark {
     background: #526CB3;
     color: #FFFFFF;
+    &:hover {
+      background: #7599FF;
+      color: #FFD949;
+    }
   }
   &-more {
     &:before {

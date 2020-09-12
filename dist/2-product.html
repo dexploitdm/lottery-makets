@@ -228,6 +228,64 @@
               </div>
             </div>
           </div>
+          <div
+            class="modal l-modal l-modal_t1 fade"
+            id="confirmatioтOfBet"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Подтверждение ставки</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="info-bet">
+                    <div class="info-bet-layout">
+                      <div class="info-bet-box">
+                        <div class="info-bet-box_label">Стоимость ставки:</div>
+                        <div class="info-bet-box_val">100 баллов</div>
+                      </div>
+                      <div class="info-bet-box">
+                        <div class="info-bet-box_label">Всего мест за столом:</div>
+                        <div class="info-bet-box_val">300</div>
+                      </div>
+                      <div class="info-bet-box">
+                        <div class="info-bet-box_label">Выбранно место под номером:</div>
+                        <div class="info-bet-box_val"><span class="js-set-place">1</span></div>
+                      </div>
+                      <div class="info-bet-box">
+                        <div class="info-bet-box_label">Загадайте число от 1 до 300:</div>
+                        <div class="info-bet-input"><input type="number" class="l-input" value="1" /></div>
+                      </div>
+                    </div>
+                    <div class="l-check">
+                      <input
+                        class="l-check-checkbox js-agree"
+                        type="checkbox"
+                        id="agreeShares"
+                        name="agreeShares"
+                        value="true"
+                        checked="checked"
+                      />
+                      <label for="agreeShares" class="l-check-label"
+                        >Я ознакомлен с <a href="#">правилами проведения акции</a></label
+                      >
+                    </div>
+                    <div class="info-bet-btn">
+                      <button type="button" class="l-btn l-btn-red" data-dismiss="modal">Отмена</button>
+                      <button type="button" class="l-btn l-btn-green js-valid-state">Сделать ставку</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -291,7 +349,7 @@
           '<div class="places-item" data-place="' +
             i +
             '">' +
-            '<div data-c="' +
+            '<div class="place" data-c="' +
             isBusy +
             '"><div class="number"><span>' +
             i +

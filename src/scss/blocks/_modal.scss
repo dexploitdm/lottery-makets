@@ -1,4 +1,7 @@
 .l-modal {
+  a {
+    color: #526CB3;
+  }
   .modal {
     &-dialog {
       max-width: 752px;
@@ -178,6 +181,93 @@
       padding: 0 10px;
     }
   }
+
+  .info-wins {
+    padding: 0 126px;
+    margin-bottom: 15px;
+    &-title {
+      font-size: 24px;
+      line-height: 34px;
+      text-align: center;
+      color: #404040;
+      padding-bottom: 20px;
+    }
+    &-desc {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      color: #404040;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #E8EBF3;
+      &_l1 {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 16px;
+      }
+    }
+    &-form {
+      &_label {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #404040;
+        text-align: left;
+      }
+    }
+    .l-textarea {
+      margin-bottom: 28px;
+      width: 100%;
+      min-height: 180px;
+      transition: .3s;
+    }
+    .l-check {
+      text-align: center;
+    }
+    &-btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      transition: .3s;
+      .profile {
+        min-width: 142px;
+        margin-right: 12px;
+      }
+      .auctions {
+        min-width: 195px;
+      }
+    }
+    @media (max-width: 986px){
+      padding: 0 60px;
+      &-btn {
+        margin-top: 20px;
+      }
+    }
+    @media (max-width: 768px){
+      padding: 0 16px;
+      &-title {
+        font-size: 20px;
+      }
+      &-desc {
+        font-size: 16px;
+      }
+      .l-check-label {
+        font-size: 16px;
+      }
+      .l-textarea {
+        margin-bottom: 14px;
+      }
+      &-btn {
+        margin-top: 9px;
+        .profile,
+        .auctions {
+          min-width: auto;
+        }
+      }
+    }
+
+  }
+
 
 }
 .modal-backdrop {
