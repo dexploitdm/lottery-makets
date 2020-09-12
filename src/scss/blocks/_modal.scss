@@ -1,0 +1,119 @@
+.l-modal {
+  .modal {
+    &-dialog {
+      max-width: 752px;
+      border-radius: 20px;
+    }
+    &-header {
+      background: #FFE5A8;
+      display: flex;
+      align-items: center;
+      .close {
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.8212 20L6.91047 8.08925C6.12479 7.30358 7.30331 6.12507 8.08898 6.91074L19.9997 18.8215L31.9105 6.91074C32.6961 6.12507 33.8747 7.30358 33.089 8.08925L21.1782 20L33.089 31.9107C33.8747 32.6964 32.6961 33.8749 31.9105 33.0893L19.9997 21.1785L8.08898 33.0893C7.30331 33.8749 6.12479 32.6964 6.91047 31.9107L18.8212 20Z' fill='%23526CB3'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        margin-right: 0;
+      }
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+      color: #526CB3;
+      width: 100%;
+      transition: .3s;
+      @media (max-width: 768px) {
+        font-size: 22px;
+      }
+    }
+  }
+  .instructions {
+    display: flex;
+    justify-content: space-between;
+    &-cover {
+      max-width: 446px;
+      width: 100%;
+      height: 490px;
+      position: relative;
+      background: #EEF3FF;
+      border-radius: 3px;
+      transition: .3s;
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+      }
+    }
+    &-desc {
+      padding-left: 40px;
+      font-size: 24px;
+      line-height: 34px;
+      color: #404040;
+      &-title {
+        font-weight: bold;
+        padding-bottom: 28px;
+        transition: .3s;
+      }
+    }
+    &-list {
+      margin-bottom: 36px;
+      &-item {
+        &:not(:last-child){
+          padding-bottom: 18px;
+        }
+      }
+    }
+    .l-btn {
+      margin-top: 24px;
+    }
+    a {
+      color: #526cb3;
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      &-cover {
+        height: 400px;
+      }
+      &-desc {
+        padding-left: 20px;
+        font-size: 20px;
+        line-height: normal;
+        &-title {
+          padding-bottom: 20px;
+        }
+      }
+      &-list {
+        margin-bottom: 20px;
+        &-item {
+          &:not(:last-child){
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+    @media (max-width: 540px) {
+      flex-wrap: wrap;
+      &-cover {
+        margin-bottom: 20px;
+      }
+      &-desc {
+        padding-left: 0;
+      }
+      .l-btn {
+        width: 100%;
+      }
+    }
+
+
+  }
+
+
+
+}
+.modal-backdrop {
+  background-color: #00000099;
+}

@@ -12,8 +12,13 @@ import './module/stickers.js';
 import './module/sorting.js';
 import './module/media/productImage';
 import './module/countdown';
-
+import './module/form/checkAgree';
 
 $(document).ready(function() {
     $('.drawer').drawer();
 });
+
+$(document).ready(function() {
+    $("#winForRepost").modal('show');
+})
+

@@ -1,0 +1,791 @@
+<% var data = {
+title: "Розыгрыш конкурсов | Главная"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+    <section class="stickers">
+        <div class="stickers-layout box">
+            <div class="sliders">
+                <div class="stickers-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sticker-box">
+                                <div class="sticker-box-head">Стикер 100 баллов</div>
+                                <div class="sticker-box-cover">
+                                    <div class="sticker-box-cover-bg"
+                                         style="background-image: url('./img/stickers/sticker-100.png');"></div>
+                                    <div class="sticker-box-scores">100 Баллов</div>
+                                </div>
+                                <div class="sticker-box-form">
+                                    <div class="sticker-box-price">Цена: <span class="num">100 Рублей</span></div>
+                                    <div class="sticker-box-action">
+                                        <div class="sticker-box-action-input">
+                                            <input type="number" class="l-input js-count-stickers" value="1"/>
+                                            <div class="sticker-box-action-input_desc">шт.</div>
+                                        </div>
+                                        <div class="sticker-box-action-btn">
+                                            <div class="sticker-box-action-btn_max js-set-count" data-set="max"></div>
+                                            <div class="sticker-box-action-btn_min js-set-count" data-set="min"></div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-box-btn">
+                                        <button type="button" class="l-btn l-btn-orange">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sticker-box">
+                                <div class="sticker-box-head">Стикер 200 баллов</div>
+                                <div class="sticker-box-cover">
+                                    <div class="sticker-box-cover-bg"
+                                         style="background-image: url('./img/stickers/sticker-200.png');"></div>
+                                    <div class="sticker-box-scores">200 Баллов</div>
+                                </div>
+                                <div class="sticker-box-form">
+                                    <div class="sticker-box-price">Цена: <span class="num">200 Рублей</span></div>
+                                    <div class="sticker-box-action">
+                                        <div class="sticker-box-action-input">
+                                            <input type="number" class="l-input js-count-stickers" value="1"/>
+                                            <div class="sticker-box-action-input_desc">шт.</div>
+                                        </div>
+                                        <div class="sticker-box-action-btn">
+                                            <div class="sticker-box-action-btn_max js-set-count" data-set="max"></div>
+                                            <div class="sticker-box-action-btn_min js-set-count" data-set="min"></div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-box-btn">
+                                        <button type="button" class="l-btn l-btn-orange">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sticker-box">
+                                <div class="sticker-box-head">Стикер 300 баллов</div>
+                                <div class="sticker-box-cover">
+                                    <div class="sticker-box-cover-bg"
+                                         style="background-image: url('./img/stickers/sticker-300.png');"></div>
+                                    <div class="sticker-box-scores">300 Баллов</div>
+                                </div>
+                                <div class="sticker-box-form">
+                                    <div class="sticker-box-price">Цена: <span class="num">300 Рублей</span></div>
+                                    <div class="sticker-box-action">
+                                        <div class="sticker-box-action-input">
+                                            <input type="number" class="l-input js-count-stickers" value="1"/>
+                                            <div class="sticker-box-action-input_desc">шт.</div>
+                                        </div>
+                                        <div class="sticker-box-action-btn">
+                                            <div class="sticker-box-action-btn_max js-set-count" data-set="max"></div>
+                                            <div class="sticker-box-action-btn_min js-set-count" data-set="min"></div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-box-btn">
+                                        <button type="button" class="l-btn l-btn-orange">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sticker-box">
+                                <div class="sticker-box-head">Стикер 400 баллов</div>
+                                <div class="sticker-box-cover">
+                                    <div class="sticker-box-cover-bg"
+                                         style="background-image: url('./img/stickers/sticker-400.png');"></div>
+                                    <div class="sticker-box-scores">400 Баллов</div>
+                                </div>
+                                <div class="sticker-box-form">
+                                    <div class="sticker-box-price">Цена: <span class="num">400 Рублей</span></div>
+                                    <div class="sticker-box-action">
+                                        <div class="sticker-box-action-input">
+                                            <input type="number" class="l-input js-count-stickers" value="1"/>
+                                            <div class="sticker-box-action-input_desc">шт.</div>
+                                        </div>
+                                        <div class="sticker-box-action-btn">
+                                            <div class="sticker-box-action-btn_max js-set-count" data-set="max"></div>
+                                            <div class="sticker-box-action-btn_min js-set-count" data-set="min"></div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-box-btn">
+                                        <button type="button" class="l-btn l-btn-orange">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sticker-box">
+                                <div class="sticker-box-head">Стикер 500 баллов</div>
+                                <div class="sticker-box-cover">
+                                    <div class="sticker-box-cover-bg"
+                                         style="background-image: url('./img/stickers/sticker-500.png');"></div>
+                                    <div class="sticker-box-scores">500 Баллов</div>
+                                </div>
+                                <div class="sticker-box-form">
+                                    <div class="sticker-box-price">Цена: <span class="num">500 Рублей</span></div>
+                                    <div class="sticker-box-action">
+                                        <div class="sticker-box-action-input">
+                                            <input type="number" class="l-input js-count-stickers" value="1"/>
+                                            <div class="sticker-box-action-input_desc">шт.</div>
+                                        </div>
+                                        <div class="sticker-box-action-btn">
+                                            <div class="sticker-box-action-btn_max js-set-count" data-set="max"></div>
+                                            <div class="sticker-box-action-btn_min js-set-count" data-set="min"></div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-box-btn">
+                                        <button type="button" class="l-btn l-btn-orange">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sticker-box">
+                                <div class="sticker-box-head">Стикер 600 баллов</div>
+                                <div class="sticker-box-cover">
+                                    <div class="sticker-box-cover-bg"
+                                         style="background-image: url('./img/stickers/sticker-500.png');"></div>
+                                    <div class="sticker-box-scores">600 Баллов</div>
+                                </div>
+                                <div class="sticker-box-form">
+                                    <div class="sticker-box-price">Цена: <span class="num">600 Рублей</span></div>
+                                    <div class="sticker-box-action">
+                                        <div class="sticker-box-action-input">
+                                            <input type="number" class="l-input js-count-stickers" value="1"/>
+                                            <div class="sticker-box-action-input_desc">шт.</div>
+                                        </div>
+                                        <div class="sticker-box-action-btn">
+                                            <div class="sticker-box-action-btn_max js-set-count" data-set="max"></div>
+                                            <div class="sticker-box-action-btn_min js-set-count" data-set="min"></div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-box-btn">
+                                        <button type="button" class="l-btn l-btn-orange">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="slider-arr">
+                        <div class="prev"></div>
+                    </div>
+<!--                  TODO: Если слайдов <=5 лучше скрыть progress-->
+                    <div class="slider-progress-wrap">
+                        <div class="slider-progress"></div>
+                        <div class="slider-progress2"></div>
+                        <div class="slider-scrollbar"></div>
+                    </div>
+                    <div class="slider-arr right">
+                        <div class="next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="l-ba box">
+        <div class="l-ba-layout">
+            <div class="l-ba-layout_bg" style="background-image: url('./img/covers/home-cover.png');"></div>
+        </div>
+    </section>
+    <section class="catalogs">
+        <div class="box">
+            <div class="catalogs-layout">
+                <div class="catalogs-filter btn-group sort-button-group">
+                    <button data-sort-direction="desc" data-sort-value="popular" type="button" class="catalogs-filter-item">Популярные <span class="f-icon f-icon-down"></span></button>
+                    <button data-sort-direction="desc" data-sort-value="date" type="button" class="catalogs-filter-item">Ближайшие <span class="f-icon f-icon-down"></span></button>
+                    <button data-sort-direction="desc" data-sort-value="repost" type="button" class="catalogs-filter-item">Репост <span class="f-icon f-icon-down"></span></button>
+                    <button data-sort-direction="desc" data-sort-value="best" type="button" class="catalogs-filter-item">По ставке <span class="f-icon f-icon-down"></span></button>
+                    <button data-sort-direction="desc" data-sort-value="places" type="button" class="catalogs-filter-item">По местам <span  class="f-icon f-icon-down"></span></button>
+                </div>
+                <div class="catalogs-box" data-count="15">
+                    <div class="container-fluid">
+                        <div class="catalogs-row row">
+
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset" data-popular="1" data-repost="2" data-best="23" data-places="3" data-date="01.02.2020">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Товар - Репост</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2020</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="22" data-repost="6" data-best="53"  data-places="7" data-date="01.03.2019">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span class="catalog-date">02.02.2020</span> 20:00
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="11" data-repost="9"  data-best="12"  data-places="5" data-date="02.02.2019">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="13" data-repost="32"  data-best="33"  data-places="3" data-date="06.02.2019">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset" data-popular="3" data-repost="99"  data-best="4" data-places="18" data-date="01.04.2020">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2020</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset" data-popular="9" data-repost="34"  data-best="9"  data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="catalogs-item col-media col-xs-6 col-sm-4 col-md-3  col-lg-offset"  data-popular="30" data-repost="12" data-best="2" data-places="18">
+                                <div class="catalog-box">
+                                    <div class="catalog-head">Название товара</div>
+                                    <div class="catalog-cover">
+                                        <div class="catalog-cover_bg" style="background-image: url('./img/covers/macbook-pro.png');"></div>
+                                        <div class="catalog-cover-soc">
+                                            <a href="#" class="soc-icon soc-icon_vk"></a>
+                                            <a href="#" class="soc-icon soc-icon_fb"></a>
+                                            <a href="#" class="soc-icon soc-icon_inst"></a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info">
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon date"></div>
+                                            <div class="catalog-info-item-text">
+                                                Cостоится <br />
+                                                <span><span class="catalog-date">01.02.2019</span> 20:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-item">
+                                            <div class="catalog-info-item_icon people"></div>
+                                            <div class="catalog-info-item-text">
+                                                Участников<br />
+                                                <span>5/18</span>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-info-btn">
+                                            <button type="button" class="l-btn l-btn-orange">Сделать ставку</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="catalogs-more">
+                        <button type="button" class="l-btn l-btn-blue-dark l-btn-more">Сделать ставку</button>
+                    </div>
+                    <div class="paginate">
+                        <div class="paginate-pages">
+                            <div class="paginate-pages-box">
+                                <button type="button" class="paginate-pages_prev disabled">Предедущая</button>
+                                <button type="button" class="paginate-pages_next">Следующая</button>
+                            </div>
+                            <div class="paginate-pages-num">
+                               <div class="page-num active">1</div>
+                               <div class="page-num"><span>,</span>2</div>
+                               <div class="page-num"><span>,</span>3</div>
+                               <div class="page-num"><span>,</span>4</div>
+                               <div class="page-num"><span>,</span>5</div>
+                               <div class="page-num"><span>,</span>...</div>
+                               <div class="page-num"><span>,</span>32</div>
+                            </div>
+                        </div>
+                        <div class="paginate-count">
+                            <div class="paginate-count-text">Показывать по: </div>
+                            <div class="paginate-count-set">
+                                <button type="button" class="set-count active">15</button>
+                                <button type="button" class="set-count">30</button>
+                                <button type="button" class="set-count">45</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <div class="modal l-modal l-modal_t1 fade" id="winForRepost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Подтверждение ставки</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="instructions">
+                        <div class="instructions-cover">
+                            <img src="img/demo/pre.png">
+                        </div>
+                        <div class="instructions-desc">
+                            <div class="instructions-desc-title">Инструкция</div>
+                            <div class="instructions-list">
+                                <div class="instructions-list-item">1. Разместите  репост у себя на странице. Не удаляйте до завершения розыгрыша.</div>
+                                <div class="instructions-list-item">2. Перейдите на <a href="#">стол розыгрыша</a> и займите место.</div>
+                                <div class="instructions-list-item">3. Выиграйте товар и <a href="#">выберите способ доставки</a> </div>
+                            </div>
+                            <form>
+                                <div class="l-check">
+                                    <input class="l-check-checkbox js-agree" type="checkbox" id="agreeShares" name="agreeShares" value="true" checked="checked">
+                                    <label for="agreeShares" class="l-check-label">Я ознакомлен с
+                                        <a href="#">правилами проведения акции</a></label>
+                                </div>
+                                <button type="submit" class="l-btn l-btn-orange js-valid-state">Опубликовать в Instagram</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
