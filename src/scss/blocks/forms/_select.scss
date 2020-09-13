@@ -37,6 +37,7 @@
   cursor: pointer;
   max-height: 48px;
   overflow: hidden;
+  transition: .3s;
   &:before {
     content: '';
     position: absolute;

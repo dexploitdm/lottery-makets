@@ -195,12 +195,26 @@
 }
 @media (max-width: 768px){
   .header {
+    &-title {
+      margin-right: 10px;
+    }
     &-layout {
       padding: 10px 0;
     }
     &-select {
       margin-top: -10px;
     }
+  }
+}
+@media (max-width: 360px){
+  .header {
+    &-title {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+  .custom-select-trigger {
+    min-width: 140px;
   }
 }
 //Mobile menu
