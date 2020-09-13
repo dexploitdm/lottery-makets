@@ -1,0 +1,277 @@
+<% var data = {
+title: "Розыгрыш конкурсов | Главная"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+    <section class="begin">
+    <div class="box">
+        <div class="begin-rel">
+            <div class="begin-layout" >
+<!--                style="background-image: url('./img/covers/beg.svg');"-->
+                <img src="/img/covers/beg.svg" />
+            </div>
+
+            <div class="begin-case">
+
+                <div class="begin-case-item">
+                    <div class="begin-case-num">1</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Регистрация</div>
+                        <div class="begin-case-desc">
+                            Нужна для удобного взаимодействия сервиса с участником
+                        </div>
+                    </div>
+                </div>
+                <div class="begin-case-item">
+                    <div class="begin-case-num">2</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Покупка “Товара”</div>
+                        <div class="begin-case-desc">
+                            Получите баллы для участия в розыгрыше. Сумма баллов равна стоимости товара
+                        </div>
+                    </div>
+                </div>
+                <div class="begin-case-item">
+                    <div class="begin-case-num">3</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Выбор стола</div>
+                        <div class="begin-case-desc">
+                            Что будем выигрывать?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="begin-case-item">
+                    <div class="begin-case-num">4</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Выбор места</div>
+                        <div class="begin-case-desc">
+                            Займите любое понравившееся место  за столом. Чем больше мест занято одним участником, тем больше вероятность победы!
+                        </div>
+                    </div>
+                </div>
+                <div class="begin-case-item">
+                    <div class="begin-case-num">5</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Выбор числа</div>
+                        <div class="begin-case-desc">
+                            Любое число от 1 до номера последнего места за столом
+                        </div>
+                    </div>
+                </div>
+                <div class="begin-case-item">
+                    <div class="begin-case-num">6</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Время розыгрыша</div>
+                        <div class="begin-case-desc">
+                            На таймере остается 15 минут. Всем участникам высылается приглашение узнать победителя онлайн!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="begin-case begin-case_l1">
+                <div class="begin-case-item">
+                    <div class="begin-case-num">7</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Первое число</div>
+                        <div class="begin-case-desc">
+                            Вскрывается первое загаданное число(1 место). Запускается отчет от мест по порядку с первого до значения загаданного числа.
+                        </div>
+                    </div>
+                </div>
+                <div class="begin-case-item">
+                    <div class="begin-case-num">8</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Кто побидитель?</div>
+                        <div class="begin-case-desc">
+                            Загаданные числа вскрываются по очереди до последнего, согласно порядку мест за столом. После вскрытия очередного числа, маркер перемещается на следующие места до тех пор, пока количество перемещений не станет равным значению загаданного числа. При достижении маркером последнего места, следующим будет первое.
+                        </div>
+                    </div>
+                </div>
+                <div class="begin-case-item">
+                    <div class="begin-case-num">9</div>
+                    <div class="begin-case-box">
+                        <div class="begin-case-title">Оформить доставку</div>
+                        <div class="begin-case-desc">
+                            Заполни обязательные поля для доставки выигрыша. Следи за статусом доставки.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="begin-btn">
+            <button type="button" class="l-btn l-btn-orange">Зарегистрироваться и начать</button>
+        </div>
+        <div class="begin-advantage">
+
+            <div class="begin-advantage-item">
+                <div class="begin-advantage-icon">
+                    <img src="img/demo/advantage.png">
+                </div>
+                <div class="begin-advantage-title">Преимущество</div>
+                <div class="begin-advantage-desc">Краткое пояснение преимущества</div>
+            </div>
+            <div class="begin-advantage-item">
+                <div class="begin-advantage-icon">
+                    <img src="img/demo/advantage.png">
+                </div>
+                <div class="begin-advantage-title">Преимущество</div>
+                <div class="begin-advantage-desc">Краткое пояснение преимущества</div>
+            </div>
+            <div class="begin-advantage-item">
+                <div class="begin-advantage-icon">
+                    <img src="img/demo/advantage.png">
+                </div>
+                <div class="begin-advantage-title">Преимущество</div>
+                <div class="begin-advantage-desc">Краткое пояснение преимущества</div>
+            </div>
+            <div class="begin-advantage-item">
+                <div class="begin-advantage-icon">
+                    <img src="img/demo/advantage.png">
+                </div>
+                <div class="begin-advantage-title">Преимущество</div>
+                <div class="begin-advantage-desc">Краткое пояснение преимущества</div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</section>
+
+    <section class="wins wins_blue">
+        <div class="box">
+            <div class="wins-head">
+                <div class="wins-head-title">
+                        <h2>Наши победители</h2>
+                </div>
+            </div>
+            <div class="wins-slider">
+                <div class="wins-slider-init">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/1.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/2.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/3.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/4.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/5.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/6.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/7.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/8.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/1.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wins-box">
+                                <div class="wins-box-cover">
+                                    <img src="img/demo/faces/2.png" />
+                                </div>
+                                <div class="wins-box-name">
+                                    Васильев <br /> Василий
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="slider-arr">
+                        <div class="prev"></div>
+                    </div>
+
+                  fg
+                    <div class="slider-arr right">
+                        <div class="next"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

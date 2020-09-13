@@ -230,7 +230,7 @@
           </div>
           <div
             class="modal l-modal l-modal_t1 fade"
-            id="confirmatioтOfBet"
+            id="betWin"
             tabindex="-1"
             role="dialog"
             aria-labelledby="exampleModalCenterTitle"
@@ -239,48 +239,43 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Подтверждение ставки</h5>
+                  <h5 class="modal-title" id="exampleModalLongTitle">Победа</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"></span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="info-bet">
-                    <div class="info-bet-layout">
-                      <div class="info-bet-box">
-                        <div class="info-bet-box_label">Стоимость ставки:</div>
-                        <div class="info-bet-box_val">100 баллов</div>
-                      </div>
-                      <div class="info-bet-box">
-                        <div class="info-bet-box_label">Всего мест за столом:</div>
-                        <div class="info-bet-box_val">300</div>
-                      </div>
-                      <div class="info-bet-box">
-                        <div class="info-bet-box_label">Выбранно место под номером:</div>
-                        <div class="info-bet-box_val"><span class="js-set-place">1</span></div>
-                      </div>
-                      <div class="info-bet-box">
-                        <div class="info-bet-box_label">Загадайте число от 1 до 300:</div>
-                        <div class="info-bet-input"><input type="number" class="l-input" value="1" /></div>
-                      </div>
+                  <div class="info-wins">
+                    <div class="info-wins-title">Поздравляем!<br />Вы стали побидителем розыгрыша!</div>
+                    <div class="info-wins-desc">
+                      Чтобы забрать выигрыш, Вам нужно заполнить<br /><a href="#">данные о доставке.</a><br />После
+                      заполнения всех обязательных полей, Вам<br />остается наблюдать за статусом доставки<br />выигрыша,
+                      в личном кабинете в разделе “Аукционы”
                     </div>
-                    <div class="l-check">
-                      <input
-                        class="l-check-checkbox js-agree"
-                        type="checkbox"
-                        id="agreeShares"
-                        name="agreeShares"
-                        value="true"
-                        checked="checked"
-                      />
-                      <label for="agreeShares" class="l-check-label"
-                        >Я ознакомлен с <a href="#">правилами проведения акции</a></label
-                      >
+                    <div class="info-wins-desc info-wins-desc_l1">
+                      Оставте отзыв о своем выигрыше и получите <a href="#">бонусные баллы!</a>
                     </div>
-                    <div class="info-bet-btn">
-                      <button type="button" class="l-btn l-btn-red" data-dismiss="modal">Отмена</button>
-                      <button type="button" class="l-btn l-btn-green js-valid-state">Сделать ставку</button>
-                    </div>
+                    <form class="info-wins-form">
+                      <div class="info-wins-form_label">Отзыв:</div>
+                      <textarea class="l-textarea" name="review"></textarea>
+                      <div class="l-check">
+                        <input
+                          class="l-check-checkbox js-agree"
+                          type="checkbox"
+                          id="agreeShares"
+                          name="agreeShares"
+                          value="true"
+                          checked="checked"
+                        />
+                        <label for="agreeShares" class="l-check-label"
+                          >Я ознакомлен с <a href="#">условиями доставкии</a></label
+                        >
+                      </div>
+                      <div class="info-wins-btn">
+                        <button type="button" class="l-btn l-btn-blue-dark profile">Профиль</button>
+                        <button type="button" class="l-btn l-btn-orange auctions">Мои аукционы</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -339,6 +334,9 @@
     </footer>
     <script src="js/bundle.js"></script>
     <script>
+      $(document).ready(function () {
+        $("#betWin").modal("show");
+      });
       //Mock
       for (let i = 1; i < 86; i++) {
         let isBusy = false;
