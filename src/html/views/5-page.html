@@ -1,33 +1,36 @@
 <% var data = {
-title: "Розыгрыш конкурсов | Главная"
+title: "Розыгрыш конкурсов | Доставка"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <main role="main">
 
 <section class="info">
     <div class="box">
+        <h1 class="info-title">Доставка</h1>
         <div class="info-layout">
             <ul class="sidebar nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    <a class="nav-link active" id="warranty-tab" data-toggle="tab" href="#warranty" role="tab" aria-controls="warranty" aria-selected="true">Гарантия и возврат</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    <a class="nav-link" id="regions-tab" data-toggle="tab" href="#regions" role="tab" aria-controls="regions" aria-selected="false">Регионы и способы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                    <a class="nav-link" id="cost-tab" data-toggle="tab" href="#cost" role="tab" aria-controls="cost" aria-selected="false">Стоимость и сроки</a>
                 </li>
             </ul>
 
             <!-- Tab panes -->
-            <div class="info-content tab-content">
-                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">1</div>
-                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
-                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">3</div>
-                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">4</div>
+            <div class="info-content info-content_l1 tab-content">
+                <div class="tab-pane active" id="warranty" role="tabpanel" aria-labelledby="warranty-tab">
+                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                </div>
+                <div class="tab-pane" id="regions" role="tabpanel" aria-labelledby="regions-tab">
+                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                </div>
+                <div class="tab-pane" id="cost" role="tabpanel" aria-labelledby="cost-tab">
+                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                </div>
             </div>
         </div>
 

@@ -1,95 +1,89 @@
 <% var data = {
-title: "Розыгрыш конкурсов | Главная"
+title: "Розыгрыш конкурсов | Часто задаваемые вопросы"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <main role="main">
 
-<section class="info">
-    <div class="box">
-        <div class="info-layout">
-            <div class="sidebar">
-                <div class="sidebar-item">
-                    <a class="sidebar-item_link active" href="#">Описание</a>
-                </div>
-                <div class="sidebar-item">
-                    <a class="sidebar-item_link active" href="#">Описание 2</a>
-                </div>
-                <div class="sidebar-item">
-                    <a class="sidebar-item_link active" href="#">Описание 3</a>
-                </div>
-            </div>
-            <div class="info-content">
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Разворачиваемая панель #1
-                                </button>
-                            </h5>
-                        </div>
+    <section class="info">
+        <div class="box">
+            <h1 class="info-title">Часто задаваемые вопросы</h1>
+            <div class="info-layout">
+                <ul class="sidebar sidebar_l1 nav nav-tabs" id="question" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="group_1-tab" data-toggle="tab" href="#group_1" role="tab" aria-controls="group_1" aria-selected="true">Группа вопросов 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="group_2-tab" data-toggle="tab" href="#group_2" role="tab" aria-controls="group_2" aria-selected="false">Группа вопросов 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="group_3-tab" data-toggle="tab" href="#group_3" role="tab" aria-controls="group_3" aria-selected="false">Группа вопросов 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="group_4-tab" data-toggle="tab" href="#group_4" role="tab" aria-controls="group_4" aria-selected="false">Группа вопросов N</a>
+                    </li>
+                </ul>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                        </div>
+                <!-- Tab panes -->
+                <div class="info-content info-content_l1 tab-content">
+                    <div class="tab-pane active" id="group_1" role="tabpanel" aria-labelledby="group_1-tab">
+                        <%= _.template(require('./../includes/question/question.html').default)(data) %>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Разворачиваемая панель #2
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                        </div>
+                    <div class="tab-pane" id="group_2" role="tabpanel" aria-labelledby="group_2-tab">
+                        <%= _.template(require('./../includes/question/question.html').default)(data) %>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Разворачиваемая панель #3
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                        </div>
+                    <div class="tab-pane" id="group_3" role="tabpanel" aria-labelledby="group_3-tab">
+                        <%= _.template(require('./../includes/question/question.html').default)(data) %>
+                    </div>
+                    <div class="tab-pane" id="group_4" role="tabpanel" aria-labelledby="group_4-tab">
+                        <%= _.template(require('./../includes/question/question.html').default)(data) %>
                     </div>
                 </div>
             </div>
-            <div class="info-right-sidebar">
-                <div id="accordion2">
-                    <div class="card">
-                        <div class="card-header" id="headingOne2">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                                    Разворачиваемая панель #1
-                                </button>
-                            </h5>
-                        </div>
 
-                        <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#accordion">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
 
         </div>
+    </section>
+    <section class="info-box bg-blue">
+        <div class="box">
+            <div class="info-box-title">Не нашли ответ?</div>
+            <div class="info-box-layout">
+                <div class="info-block info-form">
+                    <div class="info-box-head">Форма обратной связи</div>
+                    <div class="info-form-content">
+                        <div class="info-form-text">
+                            <p>Доброго времени суток!<br /> Мы рады ответить на любой ваш вопрос, связанный с проектом.</p>
+                            <p>Задайте свой вопрос, мы постараемся максимально быстро выслать ответ на вашу электронную почту.</p>
+                        </div>
+                        <form>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Ваше имя:</div>
+                                <input type="text" class="l-input l-input_l1 l-input-place_l1" name="name" placeholder="Василий Пупкин" />
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Ваш Email:</div>
+                                <input type="email" class="l-input l-input_l1 l-input-place_l1" name="email" placeholder="Test@mail.ru" />
+                            </div>
+                            <div class="l-form-control">
+                                <div class="l-form-label">Текст сообщения:</div>
+                                <textarea class="l-textarea l-textarea_l1 l-input-place_l1" name="msg" placeholder="Здесь нужно писать интересующий вас вопрос" ></textarea>
+                            </div>
+                            <div class="l-upload">
 
-    </div>
-</section>
+                            </div>
+                        </form>
 
+                    </div>
+                </div>
+                <div class="info-block info-contact">
+                    <div class="info-box-head">Контакты</div>
+                    <div class="info-contact-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <%= _.template(require('./../includes/footer.html').default)(data) %>

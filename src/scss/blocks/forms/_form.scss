@@ -1,3 +1,16 @@
-.l-form-control {
-
+.l-form {
+  &-control {
+    &-flex {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+  }
+  &-label {
+    font-size: 18px;
+    line-height: 34px;
+    color: #404040;
+    max-width: 170px;
+    width: 100%;
+  }
 }

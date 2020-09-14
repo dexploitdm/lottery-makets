@@ -14,6 +14,7 @@ import './module/media/productImage';
 import './module/countdown';
 import './module/form/checkAgree';
 import './module/modals/modalProduct';
+import './module/tabs';
 
 $(document).ready(function() {
     $('.drawer').drawer();

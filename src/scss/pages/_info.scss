@@ -1,21 +1,61 @@
 .info {
-  padding-top: 40px;
+  padding-top: 65px;
+  padding-bottom: 60px;
   transition: .3s;
+  &-title {
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    color: #404040;
+    margin-bottom: 36px;
+    transition: .3s;
+  }
   &-layout {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
   }
   &-content {
     width: 100%;
+    transition: .3s;
+    &_l1 {
+      padding-bottom: 40px;
+    }
   }
   .sidebar {
-    max-width: 200px;
+    max-width: 340px;
     width: 100%;
-    margin-right: 20px;
+    margin-right: 45px;
     transition: .3s;
+    &_l1 {
+      margin-right: 20px;
+    }
+    &_l2 {
+      max-width: 438px;
+      margin-right: 42px;
+    }
     .nav-item {
       display: block;
       width: 100%;
+      text-align: center;
+      &:not(:last-child){
+        margin-bottom: 8px;
+      }
+    }
+    .nav-link {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #526CB3;
+      background: #DCE7FF;
+      border-radius: 3px;
+      padding: 14px 10px;
+      transition: .3s;
+      &.active,
+      &:hover {
+        background: #526CB3;
+        color: #FFFFFF;
+      }
     }
   }
   &-right-sidebar {
@@ -40,4 +80,64 @@
 .panel-fix {
   max-height: 500px;
   overflow-x: auto;
+}
+
+.info {
+  &-box {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    transition: .3s;
+    &-layout {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 360px;
+      transition: .3s;
+    }
+    &-title {
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 32px;
+      transition: .3s;
+    }
+    &-head {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #404040;
+      padding: 16px 10px;
+      border-bottom: 1px solid #E8EBF3;
+      transition: .3s;
+    }
+  }
+  &-block {
+    background: #FFFFFF;
+    border-radius: 10px;
+  }
+  &-contact {
+    max-width: 340px;
+    width: 100%;
+    margin-left: 20px;
+    transition: .3s;
+    &-content {
+      padding: 12px 30px 20px 16px;
+    }
+  }
+  &-form {
+    width: 100%;
+    transition: .3s;
+    &-content {
+      padding: 18px 30px 30px;
+    }
+    &-text {
+      text-align: center;
+      padding-bottom: 20px;
+      transition: .3s;
+    }
+    .l-textarea {
+      min-height: 148px;
+    }
+  }
+
 }
