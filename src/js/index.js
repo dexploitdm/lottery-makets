@@ -15,6 +15,7 @@ import './module/countdown';
 import './module/form/checkAgree';
 import './module/modals/modalProduct';
 import './module/tabs';
+import './module/form/upload';
 
 $(document).ready(function() {
     $('.drawer').drawer();

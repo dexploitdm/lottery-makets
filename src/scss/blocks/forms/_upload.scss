@@ -1,3 +1,85 @@
 .l-upload {
+  &-btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .l-btn {
+      margin-right: 20px;
+    }
+  }
+
+  &-warning {
+    font-size: 18px;
+    line-height: 20px;
+    color: #838383;
+    position: relative;
+    padding-left: 18px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.33398 8.00004C1.33398 4.31788 4.31824 1.33337 8.00065 1.33337C11.6828 1.33337 14.6673 4.31763 14.6673 8.00004C14.6673 11.6822 11.6831 14.6667 8.00065 14.6667C4.31849 14.6667 1.33398 11.6824 1.33398 8.00004ZM2.00065 8.00004C2.00065 11.3142 4.68667 14 8.00065 14C11.3149 14 14.0007 11.314 14.0007 8.00004C14.0007 4.68583 11.3146 2.00004 8.00065 2.00004C4.68645 2.00004 2.00065 4.68606 2.00065 8.00004ZM8.00065 6.66671C8.17025 6.66266 8.33398 6.77384 8.33398 7.00004V10.6667H9.33398C9.77843 10.6667 9.77843 11.3334 9.33398 11.3334H6.66732C6.22287 11.3334 6.22287 10.6667 6.66732 10.6667H7.66732V7.33337L7.66588 7.33337H7.33398C6.88954 7.33337 6.88954 6.66671 7.33398 6.66671H8.00065ZM8.00065 4.66671C8.36884 4.66671 8.66732 4.96518 8.66732 5.33337C8.66732 5.70156 8.36884 6.00004 8.00065 6.00004C7.63246 6.00004 7.33398 5.70156 7.33398 5.33337C7.33398 4.96518 7.63246 4.66671 8.00065 4.66671Z' fill='%23404040'/%3E%3C/svg%3E%0A");
+      background-size: cover;
+      width: 16px;
+      height: 16px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+  .image-upload-wrap {
+    display: none;
+  }
+  .remove-image {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23DDE7FF'/%3E%3Cpath d='M11.6468 12L8.07764 8.4308C7.84221 8.19536 8.19536 7.84221 8.4308 8.07764L12 11.6468L15.5692 8.07764C15.8046 7.84221 16.1578 8.19536 15.9224 8.4308L12.3532 12L15.9224 15.5692C16.1578 15.8046 15.8046 16.1578 15.5692 15.9224L12 12.3532L8.4308 15.9224C8.19536 16.1578 7.84221 15.8046 8.07764 15.5692L11.6468 12Z' fill='%23526CB3' stroke='%23526CB3'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+  }
+  .file-upload-image {
+    display: none;
+    max-width: 170px;
+    transition: .3s;
+  }
+  &-content {
+
+  }
+  &-preview {
+    display: flex;
+    align-items: end;
+    &-text {
+      font-size: 14px;
+      line-height: 20px;
+      color: #404040;
+      cursor: default;
+      padding-left: 8px;
+    }
+    &-box {
+      display: flex;
+      align-items: center;
+      &:not(:last-child){
+        margin-right: 32px;
+      }
+      &.is-load {
+        position: relative;
+        .file-upload-image {
+          display: block;
+        }
+        .l-upload-preview-text {
+          display: none;
+        }
+        .remove-image {
+          position: absolute;
+          top: -6px;
+          left: -9px;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+  }
 
 }

@@ -123,6 +123,28 @@
     &-content {
       padding: 12px 30px 20px 16px;
     }
+    &-item {
+      display: flex;
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+      .soc-icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &-desc {
+      font-size: 18px;
+      line-height: 28px;
+      margin-top: -6px;
+      margin-left: 8px;
+      &_label {
+        color: #838383;
+      }
+      &_val {
+        color: #5D6888;
+      }
+    }
   }
   &-form {
     width: 100%;
@@ -137,6 +159,18 @@
     }
     .l-textarea {
       min-height: 148px;
+    }
+    .l-upload {
+      margin-top: 12px;
+      margin-bottom: 26px;
+      transition: .3s;
+    }
+    &-submit {
+      text-align: right;
+      .l-btn {
+        max-width: 180px;
+        width: 100%;
+      }
     }
   }
 
