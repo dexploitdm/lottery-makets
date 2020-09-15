@@ -1,5 +1,5 @@
 <% var data = {
-title: "Розыгрыш конкурсов | ЛК | Мои аукционы"
+title: "Розыгрыш конкурсов | ЛК | Профиль"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <main role="main">
@@ -9,13 +9,13 @@ title: "Розыгрыш конкурсов | ЛК | Мои аукционы"
         <div class="info-layout">
             <div class="sidebar sidebar_l3">
                 <div class="sidebar-item">
-                    <a class="nav-link active l-icon-m l-icon-m_auction" href="#">Мои аукционы</a>
+                    <a class="nav-link l-icon-m l-icon-m_auction" href="#">Мои аукционы</a>
                 </div>
                 <div class="sidebar-item">
                     <a class="nav-link l-icon-m l-icon-m_balance" href="#">Баланс</a>
                 </div>
                 <div class="sidebar-item">
-                    <a class="nav-link l-icon-m l-icon-m_profile" href="#">Профиль</a>
+                    <a class="nav-link l-icon-m l-icon-m_profile active" href="#">Профиль</a>
                 </div>
                 <div class="sidebar-item">
                     <a class="nav-link l-icon-m l-icon-m_question" href="#">Вопрос</a>
@@ -71,19 +71,11 @@ title: "Розыгрыш конкурсов | ЛК | Мои аукционы"
             <div class="info-right-sidebar">
 
 
-                <div class="auction c-list-drop">
-                    <div class="auction-block-head">
-                        <h2 class="auction-title">Выйгрыш</h2>
-                    </div>
-                    <div class="question-content">
-                        <div class="show-list">
-                            <div class="auction-fix l-scrollbar">
-                                <div class="auction-box">
-                                    <%= _.template(require('./../includes/products/product-checkout.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product-checkout.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product-checkout.html').default)(data) %>
-                                </div>
-                            </div>
+                <div class="c-card c-card_l1">
+                    <div class="c-card-box">
+                        <div class="c-card-head">Уведомления</div>
+                        <div class="c-card-content">
+
                         </div>
                     </div>
                 </div>

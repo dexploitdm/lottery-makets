@@ -1,0 +1,80 @@
+<% var data = {
+title: "Розыгрыш конкурсов | ЛК | Баланс"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+
+<section class="info">
+    <div class="box">
+        <div class="info-layout">
+            <div class="sidebar sidebar_l3">
+                <div class="sidebar-item">
+                    <a class="nav-link l-icon-m l-icon-m_auction" href="#">Мои аукционы</a>
+                </div>
+                <div class="sidebar-item">
+                    <a class="nav-link l-icon-m l-icon-m_balance active" href="#">Баланс</a>
+                </div>
+                <div class="sidebar-item">
+                    <a class="nav-link l-icon-m l-icon-m_profile" href="#">Профиль</a>
+                </div>
+                <div class="sidebar-item">
+                    <a class="nav-link l-icon-m l-icon-m_question" href="#">Вопрос</a>
+                </div>
+            </div>
+            <div class="info-content">
+
+                <div class="c-card">
+                    <div class="c-card-box">
+                        <div class="c-card-head c-card-head_l1">Остаток: 100 баллов</div>
+                    </div>
+
+                </div>
+
+                <div class="c-card">
+                    <div class="c-card-box">
+                        <div class="c-card-head">Покупка стикеров</div>
+                        <div class="c-card-content">
+                            <div class="l-slider">
+                                <div class="c-card-content_slider">
+                                    <%= _.template(require('./../includes/products/stickers.html').default)(data) %>
+                                </div>
+                                <div class="slider-nav">
+                                    <div class="slider-arr">
+                                        <div class="prev"></div>
+                                    </div>
+                                    <div class="slider-arr right">
+                                        <div class="next"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="info-right-sidebar">
+
+
+                <div class="c-card">
+                    <div class="c-card-box">
+                        <div class="c-card-head">Ваши стикеры</div>
+                        <div class="c-card-content">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

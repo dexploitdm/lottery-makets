@@ -1,0 +1,50 @@
+<% var data = {
+title: "Розыгрыш конкурсов | О нас"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+
+<section class="info">
+    <div class="box">
+        <h1 class="info-title">О нас</h1>
+        <div class="info-layout">
+            <ul class="sidebar sidebar_l2 nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="terms-tab" data-toggle="tab" href="#terms" role="tab" aria-controls="terms" aria-selected="true">Пользовательское соглашение</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="algorithm-tab" data-toggle="tab" href="#algorithm" role="tab" aria-controls="algorithm" aria-selected="false">Алгоритм розыгрыша</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="promotion-tab" data-toggle="tab" href="#promotion" role="tab" aria-controls="promotion" aria-selected="false">Правила проведения акции</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="false">Способы оплаты</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="info-content info-content_l1 tab-content">
+                <div class="tab-pane active" id="terms" role="tabpanel" aria-labelledby="terms-tab">
+                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                </div>
+                <div class="tab-pane" id="algorithm" role="tabpanel" aria-labelledby="algorithm-tab">
+                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                </div>
+                <div class="tab-pane" id="promotion" role="tabpanel" aria-labelledby="promotion-tab">
+                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                </div>
+                <div class="tab-pane" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section>
+
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

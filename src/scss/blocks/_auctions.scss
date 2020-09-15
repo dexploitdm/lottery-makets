@@ -25,7 +25,8 @@
     transition: .3s;
   }
   &-box {
-    padding: 16px 48px;
+    padding: 16px 35px;
+    transition: .3s;
     .catalog-box {
       &:not(:last-child){
         margin-bottom: 16px;

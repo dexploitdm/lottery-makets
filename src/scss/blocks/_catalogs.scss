@@ -164,6 +164,20 @@
         width: 100%;
       }
     }
+    &-status {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      padding-top: 31px;
+      padding-bottom: 12px;
+      transition: .3s;
+      &_label {
+        color: #5d6888;
+      }
+      &_val{
+        color: #1A3682;
+      }
+    }
   }
   &-win {
     background: #E2B33A;

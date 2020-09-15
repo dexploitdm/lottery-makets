@@ -1,0 +1,52 @@
+.c-card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #D3D9E8;
+  box-sizing: border-box;
+
+  &_l1 {
+    margin-left: 20px;
+  }
+  &-head {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    padding: 13px 10px;
+    &_l1 {
+      font-weight: 500;
+      color: #526CB3;
+      background: #E2B33A;
+    }
+  }
+  &-content {
+    border-top: 1px solid #D3D9E8;
+    &_slider {
+      padding-top: 24px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 620px;
+      margin: auto;
+      position: relative;
+    }
+  }
+}
+.l-slider {
+  position: relative;
+  .slider-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    padding-top: 0;
+  }
+  .slider-arr {
+    &.right {
+      right: 0;
+      position: absolute;
+    }
+  }
+}
+.stickers-slider-lk {
+
+}

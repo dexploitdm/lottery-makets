@@ -3,6 +3,7 @@ import $ from "jquery";
 $(document).ready(function() {
     initSliderHome();
     initSliderWins();
+    initSliderStickersLK();
 })
 
 function initSliderHome() {
@@ -77,6 +78,28 @@ function initSliderWins() {
             },
             320: {
                 slidesPerView: 3
+            }
+        }
+    });
+}
+
+function initSliderStickersLK() {
+
+    var stickersSliderLK = new Swiper('.stickers-slider-lk', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        preventClicks: false,
+        preventClicksPropagation: false,
+        navigation: {
+            nextEl: '.next',
+            prevEl: '.prev'
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3
+            },
+            320: {
+                slidesPerView: 1
             }
         }
     });

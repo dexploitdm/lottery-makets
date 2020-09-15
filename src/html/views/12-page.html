@@ -1,0 +1,135 @@
+<% var data = {
+title: "Розыгрыш конкурсов | Вопрос"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+
+    <section class="info">
+        <div class="box">
+            <div class="info-layout">
+                <div class="sidebar sidebar_l3">
+                    <div class="sidebar-item">
+                        <a class="nav-link l-icon-m l-icon-m_auction" href="#">Мои аукционы</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <a class="nav-link l-icon-m l-icon-m_balance" href="#">Баланс</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <a class="nav-link l-icon-m l-icon-m_profile" href="#">Профиль</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <a class="nav-link l-icon-m l-icon-m_question active" href="#">Вопрос</a>
+                    </div>
+                </div>
+
+                <div class="c-card">
+                    <div class="c-card-box">
+                        <div class="c-card-head">Форма обратной связи</div>
+                        <div class="c-card-content">
+                            <div class="info-form-content">
+                                <div class="info-form-text">
+                                    <p>Доброго времени суток!<br /> Мы рады ответить на любой ваш вопрос, связанный с проектом.</p>
+                                    <p>Задайте свой вопрос, мы постараемся максимально быстро выслать ответ на вашу электронную почту.</p>
+                                </div>
+                                <form  enctype="multipart/form-data">
+                                    <div class="l-form-control-flex">
+                                        <div class="l-form-label">Ваше имя:</div>
+                                        <input type="text" class="l-input l-input_l1 l-input-place_l1" name="name" placeholder="Василий Пупкин" />
+                                    </div>
+                                    <div class="l-form-control-flex">
+                                        <div class="l-form-label">Ваш Email:</div>
+                                        <input type="email" class="l-input l-input_l1 l-input-place_l1" name="email" placeholder="Test@mail.ru" />
+                                    </div>
+                                    <div class="l-form-control">
+                                        <div class="l-form-label">Текст сообщения:</div>
+                                        <textarea class="l-textarea l-textarea_l1 l-input-place_l1" name="msg" placeholder="Здесь нужно писать интересующий вас вопрос" ></textarea>
+                                    </div>
+                                    <div class="l-upload">
+                                        <div class="l-upload-btn">
+                                            <button class="l-btn l-btn-blue-dark file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Прикрепить изображения...</button>
+                                            <div class="l-upload-warning">Максимум 3 изображения</div>
+                                        </div>
+                                        <div class="image-upload-wrap">
+                                            <input class="file-upload-input js-upload-file"  type='file' accept="image/*" multiple/>
+                                        </div>
+
+                                        <div class="l-upload-content">
+                                            <div class="l-upload-preview">
+                                                <div class="l-upload-preview-box">
+                                                    <div class="remove-image js-remove-image"></div>
+                                                    <img class="file-upload-image js-upload-preview" src="#" alt="your image" />
+                                                    <div class="l-upload-preview-text">Изображение 1</div>
+                                                </div>
+                                                <div class="l-upload-preview-box">
+                                                    <div class="remove-image js-remove-image"></div>
+                                                    <img class="file-upload-image js-upload-preview" src="#" alt="your image" />
+                                                    <div class="l-upload-preview-text">Изображение 2</div>
+                                                </div>
+                                                <div class="l-upload-preview-box">
+                                                    <div class="remove-image js-remove-image"></div>
+                                                    <img class="file-upload-image js-upload-preview" src="#" alt="your image" />
+                                                    <div class="l-upload-preview-text">Изображение 3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-form-submit">
+                                        <input type="submit" class="l-btn l-btn-green" value="Отправить" />
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card c-card_l1">
+                    <div class="c-card-box">
+                        <div class="c-card-head">Контакты</div>
+                        <div class="c-card-content">
+                            <div class="info-contact-content">
+                                <div class="info-contact-item">
+                                    <div class="contact-icon contact-icon_home"></div>
+                                    <div class="info-contact-desc">
+                                        <div class="info-contact-desc_label">Адрес:</div>
+                                        <div class="info-contact-desc_val">г. Пермь, ул. Екатеринеская 131</div>
+                                    </div>
+                                </div>
+                                <div class="info-contact-item">
+                                    <div class="contact-icon contact-icon_phone"></div>
+                                    <div class="info-contact-desc">
+                                        <div class="info-contact-desc_label">Телефон:</div>
+                                        <div class="info-contact-desc_val">+7 (900) 324-32-13</div>
+                                    </div>
+                                </div>
+                                <div class="info-contact-item">
+                                    <div class="contact-icon contact-icon_email"></div>
+                                    <div class="info-contact-desc">
+                                        <div class="info-contact-desc_label">E-mail:</div>
+                                        <div class="info-contact-desc_val">test@mail.ru</div>
+                                    </div>
+                                </div>
+                                <div class="info-contact-item">
+                                    <div class="soc-icon soc-icon_vk"></div>
+                                    <div class="info-contact-desc">
+                                        <div class="info-contact-desc_label">Вконтакте:</div>
+                                        <div class="info-contact-desc_val"><a href="#" target="_blank">vk.com/namegroup</a></div>
+                                    </div>
+                                </div>
+                                <div class="info-contact-item">
+                                    <div class="soc-icon soc-icon_inst"></div>
+                                    <div class="info-contact-desc">
+                                        <div class="info-contact-desc_label">Instagram:</div>
+                                        <div class="info-contact-desc_val"><a href="#" target="_blank">instagramNameAccount</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
