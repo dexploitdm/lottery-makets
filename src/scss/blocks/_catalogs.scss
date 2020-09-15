@@ -165,6 +165,27 @@
       }
     }
   }
+  &-win {
+    background: #E2B33A;
+    border-radius: 5px;
+    padding: 12px 10px 13px;
+    margin-top: -2px;
+    transition: .3s;
+
+    &-title {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 4px;
+    }
+    &-name {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #1A3682;
+    }
+  }
   @media (min-width: 576px) {
     &-info {
       padding: 20px 10px;

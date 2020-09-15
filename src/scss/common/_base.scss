@@ -74,3 +74,16 @@ h2 {
 .bg-blue {
   background: #526CB3;
 }
+.l-scrollbar {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #DCE7FF;
+    border-radius: 0 0 10px 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #C1CDE7;
+    border-radius: 100px;
+  }
+}
