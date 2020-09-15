@@ -10,10 +10,26 @@
     margin-bottom: 36px;
     transition: .3s;
   }
+  @media (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 0;
+    &_l1 {
+      padding-bottom: 36px;
+    }
+    &-title {
+      font-size: 28px;
+      line-height: 28px;
+      padding-bottom: 0;
+      margin-bottom: 30px;
+    }
+  }
   &-layout {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @media (max-width: 986px) {
+      display: block;
+    }
   }
   &-content {
     width: 100%;
@@ -38,10 +54,10 @@
       max-width: 220px;
       margin-right: 20px;
     }
+
     &-item {
       width: 100%;
       text-align: center;
-
 
       &:not(:last-child){
         margin-bottom: 8px;
@@ -78,6 +94,16 @@
         padding-left: 48px;
       }
     }
+    @media (max-width: 986px) {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 768px) {
+      .nav-link {
+        font-size: 20px;
+        line-height: 22px;
+      }
+    }
   }
   &-right-sidebar {
     max-width: 320px;
@@ -111,8 +137,13 @@
     &-layout {
       display: flex;
       justify-content: space-between;
-      margin-left: 360px;
       transition: .3s;
+      @media (min-width: 1200px){
+        margin-left: 360px;
+      }
+      @media (max-width: 986px){
+        display: block;
+      }
     }
     &-title {
       font-size: 32px;
@@ -130,6 +161,13 @@
       padding: 16px 10px;
       border-bottom: 1px solid #E8EBF3;
       transition: .3s;
+    }
+    @media (max-width: 986px){
+      padding-top: 30px;
+      padding-bottom: 40px;
+      &-head {
+        font-size: 20px;
+      }
     }
   }
   &-block {
@@ -166,6 +204,12 @@
         color: #5D6888;
       }
     }
+    @media (max-width: 986px){
+      margin: 0 auto;
+    }
+    @media (max-width: 786px){
+      max-width: 100%;
+    }
   }
   &-form {
     width: 100%;
@@ -174,6 +218,8 @@
       padding: 18px 30px 30px;
     }
     &-text {
+      font-size: 18px;
+      line-height: 28px;
       text-align: center;
       padding-bottom: 20px;
       transition: .3s;
@@ -191,6 +237,17 @@
       .l-btn {
         max-width: 180px;
         width: 100%;
+      }
+    }
+    @media (max-width: 986px){
+      margin-bottom: 20px;
+      &-text {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 0;
+      }
+      .l-upload {
+        margin-bottom: 16px;
       }
     }
   }

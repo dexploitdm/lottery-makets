@@ -38,4 +38,7 @@
     line-height: 21px;
     width: 100%;
   }
+  @media (max-width: 768px) {
+    padding: 13px 12px;
+  }
 }
