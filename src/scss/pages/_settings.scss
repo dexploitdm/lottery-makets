@@ -1,0 +1,46 @@
+.notification {
+  &-block {
+    &-item {
+
+    }
+    .l-check {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-left: 26px;
+      &:not(:last-child) {
+        border-bottom: 1px solid #D3D9E8;
+      }
+    }
+  }
+}
+.l-setting {
+  &-btn {
+    text-align: right;
+    padding: 4px 28px 20px 20px;
+    transition: .3s;
+    .l-btn {
+      min-width: 170px;
+    }
+  }
+  .l-form-control-flex {
+    padding-left: 30px;
+    padding-right: 28px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D3D9E8;
+    transition: .3s;
+    &:first-child {
+      padding-top: 12px;
+    }
+    &_l1 {
+      border-bottom: 0;
+    }
+  }
+  .l-form-label {
+    max-width: 250px;
+    margin-right: 6px;
+    transition: .3s;
+  }
+  .l-select {
+
+  }
+}

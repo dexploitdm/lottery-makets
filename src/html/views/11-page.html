@@ -23,58 +23,120 @@ title: "Розыгрыш конкурсов | ЛК | Профиль"
             </div>
             <div class="info-content">
 
-                <div class="auction c-list-drop question">
-                    <div class="l-tab active">
-                        <h2 class="auction-title">Активные аукционы</h2>
-                        <div class="question-icon"></div>
+                <div class="auction c-list-drop l-collapse">
+                    <div class="l-tab single active">
+                        <h2 class="auction-title">Мой профиль</h2>
+                        <div class="l-collapse-icon"></div>
                     </div>
-                    <div class="question-content answer">
-                        <div class="show-list">
-
-                            <div class="auction-fix l-scrollbar">
-                                <div class="auction-content">
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                </div>
+                    <div class="l-setting answer">
+                        <form>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Логин:</div>
+                                <div class="l-form-val">Никнейм</div>
                             </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">E-mail:</div>
+                                <div class="l-form-val">Test@mail.com</div>
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Дата регистрации:</div>
+                                <div class="l-form-val">12.01.2019</div>
+                            </div>
+                            <div class="l-form-control-flex l-form-control-flex_l1">
+                                <div class="l-form-label">Новый E-mail:</div>
+                                <input type="text" class="l-input l-input_l1 l-input-place_l1" name="newEmail" placeholder="Test2@mail.com">
+                            </div>
+
+
+
+                            <div class="l-setting-btn">
+                                <input type="submit" class="l-btn l-btn-green" value="Сохранить">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="auction c-list-drop l-collapse">
+                    <div class="l-tab  active">
+                        <h2 class="auction-title">Мой данные</h2>
+                        <div class="l-collapse-icon"></div>
+                    </div>
+                    <div class="l-setting answer">
+                        <form>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Имя:</div>
+                                <input type="text" class="l-input l-input_l1 l-input-place_l1" name="name" placeholder="Иван">
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Фамилия:</div>
+                                <input type="text" class="l-input l-input_l1 l-input-place_l1" name="surname" placeholder="Иванов">
+                            </div>
+                            <div class="l-form-control-flex l-form-control-flex_l1">
+                                <div class="l-form-label">Пол:</div>
+                                <select class="l-dropdown">
+                                    <option>мужской</option>
+                                    <option>женский</option>
+                                </select>
+
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Дата рождения:</div>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="auction c-list-drop l-collapse">
+                    <div class="l-tab  active">
+                        <h2 class="auction-title">Адрес доставки</h2>
+                        <div class="l-collapse-icon"></div>
+                    </div>
+                    <div class="l-setting answer">
+                        <div class="show-list">
+                            s
 
                         </div>
                     </div>
                 </div>
-                <div class="auction c-list-drop question">
-                    <div class="l-tab">
-                        <h2 class="auction-title">Завершенные аукционы</h2>
-                        <div class="question-icon"></div>
+                <div class="auction c-list-drop l-collapse">
+                    <div class="l-tab  active">
+                        <h2 class="auction-title">Изменить пароль</h2>
+                        <div class="l-collapse-icon"></div>
                     </div>
-                    <div class="question-content answer" style="display: none;">
+                    <div class="l-setting answer">
                         <div class="show-list">
-                            <div class="auction-fix l-scrollbar">
-                                <div class="auction-content">
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                    <%= _.template(require('./../includes/products/product.html').default)(data) %>
-                                </div>
-                            </div>
+
+                            s
+
+
                         </div>
                     </div>
                 </div>
 
             </div>
             <div class="info-right-sidebar">
-
-
                 <div class="c-card c-card_l1">
                     <div class="c-card-box">
                         <div class="c-card-head">Уведомления</div>
                         <div class="c-card-content">
+                            <div class="notification-block">
+
+                                <div class="l-check">
+                                    <input class="l-check-checkbox" type="checkbox" id="endDraws" name="endDraws" value="true" checked="checked">
+                                    <label for="endDraws" class="l-check-label">Уведомление о завершении розыгрышей</label>
+                                </div>
+                                <div class="l-check">
+                                    <input class="l-check-checkbox" type="checkbox" id="changeStatus" name="changeStatus" value="true" checked="checked">
+                                    <label for="changeStatus" class="l-check-label">Уведомлять об изменении статусу доставки</label>
+                                </div>
+                                <div class="l-check">
+                                    <input class="l-check-checkbox" type="checkbox" id="newLottery" name="endDraws" value="true" checked="checked">
+                                    <label for="newLottery" class="l-check-label">Уведомлять о новых розыгрышах</label>
+                                </div>
+
+                            </div>
+
 
                         </div>
                     </div>
