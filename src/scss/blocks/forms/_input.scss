@@ -5,6 +5,7 @@
   outline: none;
   border: 0;
   padding-left: 10px;
+  border-radius: 5px;
   &_l1 {
     background: #DDE7FF;
     padding: 13px 12px;
@@ -24,6 +25,13 @@
       color: #A3A3A3;
     }
   }
+  &_num {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
 }
 .l-textarea {
   background: #DDE7FF;
@@ -41,4 +49,20 @@
   @media (max-width: 768px) {
     padding: 13px 12px;
   }
+}
+.flatpickr-input {
+  max-width: 190px;
+  &::-webkit-input-placeholder {
+    color: #A3A3A3;
+  }
+  &::-moz-placeholder {
+    color: #A3A3A3;
+  }
+  &:-ms-input-placeholder {
+    color: #A3A3A3;
+  }
+  &:-moz-placeholder {
+    color: #A3A3A3;
+  }
+
 }

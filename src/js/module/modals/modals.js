@@ -1,6 +1,4 @@
-import $ from "jquery";
-
-$(document).ready(function() {
+export default function initModals() {
     const placeItem = $('.places-item');
     const modalSetPlace = $('.js-set-place');
     if(placeItem.length > 0){
@@ -12,4 +10,7 @@ $(document).ready(function() {
             }
         });
     }
-})
+
+    //Запуск модального окна при загрузке
+    $(".js-start-modal").modal('show');
+}

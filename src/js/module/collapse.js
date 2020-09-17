@@ -1,6 +1,4 @@
-import $ from "jquery";
-
-$(document).ready(function() {
+export default function initCollapse() {
     $(".l-tab").on("click", function () {
         var el = $(this);
         let singleBlock = $(this).hasClass('single');
@@ -14,4 +12,4 @@ $(document).ready(function() {
             el.addClass("active"),
             el.siblings(".answer").stop(!0, !0).slideDown(300))
     })
-});
+}

@@ -1,6 +1,4 @@
-import $ from "jquery";
-
-$(document).ready(function() {
+export default function initDropdown() {
     $('select.l-dropdown').each(function() {
 
         var dropdown = $('<div />').addClass('l-dropdown selectDropdown');
@@ -55,5 +53,4 @@ $(document).ready(function() {
             dropdown.removeClass('open');
         }
     });
-
-});
+}

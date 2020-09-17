@@ -1,0 +1,217 @@
+<% var data = {
+title: "Розыгрыш конкурсов | ЛК | Профиль"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+
+<section class="info info_l1">
+    <div class="box">
+        <div class="info-layout">
+            <div class="sidebar sidebar_l3">
+                <div class="sidebar-item">
+                    <a class="nav-link l-icon-m l-icon-m_auction" href="#">Мои аукционы</a>
+                </div>
+                <div class="sidebar-item">
+                    <a class="nav-link l-icon-m l-icon-m_balance" href="#">Баланс</a>
+                </div>
+                <div class="sidebar-item">
+                    <a class="nav-link l-icon-m l-icon-m_profile active" href="#">Профиль</a>
+                </div>
+                <div class="sidebar-item">
+                    <a class="nav-link l-icon-m l-icon-m_question" href="#">Вопрос</a>
+                </div>
+            </div>
+            <div class="info-content">
+
+                <div class="auction c-list-drop l-collapse">
+                    <div class="l-tab single active">
+                        <h2 class="auction-title">Мой профиль</h2>
+                        <div class="l-collapse-icon"></div>
+                    </div>
+                    <div class="l-setting answer">
+                        <form>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Логин:</div>
+                                <div class="l-form-val">Никнейм</div>
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">E-mail:</div>
+                                <div class="l-form-val">Test@mail.com</div>
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Дата регистрации:</div>
+                                <div class="l-form-val">12.01.2019</div>
+                            </div>
+                            <div class="l-form-control-flex l-form-control-flex_l1 is-error">
+                                <div class="l-form-label">Новый E-mail:</div>
+                                <div class="l-form-control-box">
+                                    <input type="text" class="l-input l-input_l1 l-input-place_l1" name="newEmail" value="Test2@mail.com">
+                                    <div class="l-form-control-msg">Укажите корректный E-mail</div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="l-setting-btn">
+                                <input type="submit" class="l-btn l-btn-green" value="Сохранить">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="auction c-list-drop l-collapse">
+                    <div class="l-tab single active">
+                        <h2 class="auction-title">Мой данные</h2>
+                        <div class="l-collapse-icon"></div>
+                    </div>
+                    <div class="l-setting answer">
+                        <form>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Имя:</div>
+                                <input type="text" class="l-input l-input_l1 l-input-place_l1">
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Фамилия:</div>
+                                <input type="text" class="l-input l-input_l1 l-input-place_l1">
+                            </div>
+                            <div class="l-form-control-flex ">
+                                <div class="l-form-label">Пол:</div>
+                                <select class="l-dropdown">
+                                    <option>мужской</option>
+                                    <option>женский</option>
+                                </select>
+
+                            </div>
+                            <div class="l-form-control-flex l-form-control-flex_l1">
+                                <div class="l-form-label">Дата рождения:</div>
+                                <div class="l-form-control-date">
+                                    <input class="l-input l-input_l1 flatpickr flatpickr-input active" type="text" placeholder="Дата" readonly="readonly">
+                                </div>
+
+                            </div>
+                            <div class="l-setting-btn">
+                                <input type="submit" class="l-btn l-btn-green" value="Сохранить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="auction c-list-drop l-collapse">
+                    <div class="l-tab single active">
+                        <h2 class="auction-title">Адрес доставки</h2>
+                        <div class="l-collapse-icon"></div>
+                    </div>
+                    <div class="l-setting answer">
+                        <form>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Получатель (ФИО):</div>
+                                <input type="text" class="l-input l-input_l1 l-input-place_l1" name="fio">
+                            </div>
+                            <div class="l-form-control-flex l-dropdown_full">
+                                <div class="l-form-label">Страна:</div>
+                                <select class="l-dropdown">
+                                    <option>Россия</option>
+                                    <option>США</option>
+                                    <option>Китай</option>
+                                </select>
+                            </div>
+                            <div class="l-form-control-flex l-dropdown_full">
+                                <div class="l-form-label">Город:</div>
+                                <select class="l-dropdown">
+                                    <option>Пермь</option>
+                                    <option>Екатеринбург</option>
+                                    <option>Москва</option>
+                                </select>
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Улица:</div>
+                                <input type="text" class="l-input l-input_l1 l-input-place_l1" name="street">
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Индекс:</div>
+                                <input type="number" class="l-input l-input_num l-input_l1 half-width" name="index">
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Номер телефона:</div>
+                                <input type="text" class="l-input l-input_num l-input_l1 half-width js-phone-mask" name="phone">
+                            </div>
+                            <div class="l-form-control-flex baseline l-form-control-flex_l1">
+                                <div class="l-form-label">Примечание:</div>
+                                <textarea class="l-textarea l-textarea_l1 l-input-place_l1" name="msg" placeholder="Информация которая будет полезна сервису доставки"></textarea>
+                            </div>
+                            <div class="l-setting-btn">
+                                <input type="submit" class="l-btn l-btn-green" value="Сохранить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="auction c-list-drop l-collapse">
+                    <div class="l-tab single active">
+                        <h2 class="auction-title">Изменить пароль</h2>
+                        <div class="l-collapse-icon"></div>
+                    </div>
+                    <div class="l-setting answer">
+                        <div class="show-list">
+                            <div class="l-form-control-flex  is-error">
+                                <div class="l-form-label">Старый пароль:</div>
+                                <div class="l-form-control-box">
+                                    <input type="password" class="l-input l-input_l1 l-input-place_l1" name="oldPass" value="testtesttest">
+                                    <div class="l-form-control-msg">Не верный старый пароль, попробуйте еще раз</div>
+                                </div>
+                            </div>
+                            <div class="l-form-control-flex">
+                                <div class="l-form-label">Новый пароль:</div>
+                                <div class="l-form-control-box">
+                                    <input type="password" class="l-input l-input_l1 l-input-place_l1" name="newPass" value="testtesttest">
+                                </div>
+                            </div>
+                            <div class="l-form-control-flex l-form-control-flex_l1">
+                                <div class="l-form-label">Подтверждение пароля:</div>
+                                <div class="l-form-control-box">
+                                    <input type="password" class="l-input l-input_l1 l-input-place_l1" name="confirmationPass" value="testtesttest">
+                                </div>
+                            </div>
+                            <div class="l-setting-btn">
+                                <input type="submit" class="l-btn l-btn-green" value="Сохранить">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="info-right-sidebar">
+                <div class="c-card c-card_l1">
+                    <div class="c-card-box">
+                        <div class="c-card-head">Уведомления</div>
+                        <div class="c-card-content">
+                            <div class="notification-block">
+
+                                <div class="l-check">
+                                    <input class="l-check-checkbox" type="checkbox" id="endDraws" name="endDraws" value="true" checked="checked">
+                                    <label for="endDraws" class="l-check-label">Уведомление о завершении розыгрышей</label>
+                                </div>
+                                <div class="l-check">
+                                    <input class="l-check-checkbox" type="checkbox" id="changeStatus" name="changeStatus" value="true" checked="checked">
+                                    <label for="changeStatus" class="l-check-label">Уведомлять об изменении статусу доставки</label>
+                                </div>
+                                <div class="l-check">
+                                    <input class="l-check-checkbox" type="checkbox" id="newLottery" name="endDraws" value="true" checked="checked">
+                                    <label for="newLottery" class="l-check-label">Уведомлять о новых розыгрышах</label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

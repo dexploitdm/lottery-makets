@@ -167,6 +167,11 @@
   select {
     display: none;
   }
+  &_full {
+    .selectDropdown {
+      width: 100%;
+    }
+  }
   & > span {
     cursor: pointer;
     padding: 9px 16px;

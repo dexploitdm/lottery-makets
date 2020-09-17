@@ -1,6 +1,4 @@
-import $ from "jquery";
-
-$(document).ready(function() {
+export default function initStickers() {
     const actionCountStickers = $('.js-set-count');
     actionCountStickers.click(function() {
         $(this).attr('data-set');
@@ -16,4 +14,4 @@ $(document).ready(function() {
             }
         }
     });
-});
+}

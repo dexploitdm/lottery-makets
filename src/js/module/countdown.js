@@ -1,6 +1,4 @@
-import $ from "jquery";
-
-$(document).ready(function() {
+export default function initCountDown() {
     const timeDate = $('.js-product-time');
     if(timeDate.length >0){
         const second = 1000,
@@ -22,5 +20,4 @@ $(document).ready(function() {
 
             }, second)
     }
-
-});
+}

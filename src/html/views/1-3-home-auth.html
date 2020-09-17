@@ -1,0 +1,49 @@
+<% var data = {
+title: "Розыгрыш конкурсов | Главная"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+    <!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#winForRepost">-->
+    <!--        Launch demo modal-->
+    <!--    </button>-->
+    <!--    TODO: js-start-modal - Запуск окна при загрузке-->
+    <div class="modal l-modal l-modal_t1 l-modal-auth fade js-start-modal" id="modalAuth" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="auth-form">
+                        <form>
+                            <div class="l-form-control-flex is-error">
+                                <div class="l-form-label">E-mail:</div>
+                                <div class="l-form-control-box">
+                                    <input type="text" class="l-input l-input_l1 l-input-place_l1" name="email" value="Test@mail.com">
+                                </div>
+                            </div>
+                            <div class="l-form-control-flex is-error">
+                                <div class="l-form-label">Пароль:</div>
+                                <div class="l-form-control-box">
+                                    <input type="password" class="l-input l-input_l1 l-input-place_l1" name="password" value="">
+                                </div>
+                            </div>
+                            <div class="l-modal-auth-msg">Такого пользователя нет, или введены не верные данные</div>
+                            <div class="l-modal-auth-btn">
+                                <input type="submit" class="l-btn l-btn-green" value="Войти">
+                            </div>
+                            <div class="l-modal-auth-text">
+                                <a class="trigger">Забыли пароль?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

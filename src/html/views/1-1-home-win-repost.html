@@ -755,7 +755,8 @@ title: "Розыгрыш конкурсов | Главная"
 <!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#winForRepost">-->
 <!--        Launch demo modal-->
 <!--    </button>-->
-    <div class="modal l-modal l-modal_t1 fade" id="winForRepost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!--    TODO: js-start-modal - Запуск окна при загрузке-->
+    <div class="modal l-modal l-modal_t1 fade js-start-modal" id="winForRepost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -792,4 +793,4 @@ title: "Розыгрыш конкурсов | Главная"
     </div>
 
 </main>
-<%= _.template(require('./../includes/components/footer-home-modal.html').default)(data) %>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

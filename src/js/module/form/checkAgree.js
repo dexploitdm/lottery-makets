@@ -1,6 +1,4 @@
-import $ from "jquery";
-
-$(document).ready(function() {
+export default function initCheckAgree() {
     const agreeCheck = $('.js-agree');
     if(agreeCheck.length > 0){
         const btnFormValid = $('.js-valid-state');
@@ -13,7 +11,5 @@ $(document).ready(function() {
                 btnFormValid.attr('disabled','disabled');
             }
         });
-
     }
-
-});
+}

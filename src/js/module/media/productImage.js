@@ -1,7 +1,4 @@
-import $ from "jquery";
-
-
-$(document).ready(function() {
+export default function initProductImage() {
     const thumb = $('.product-info-thumb-img'),
         cover = $('.product-info-cover').find('img');
 
@@ -10,4 +7,4 @@ $(document).ready(function() {
         $(this).addClass('active');
         cover.attr('src',$(this).find('img').attr('src'));
     });
-});
+}

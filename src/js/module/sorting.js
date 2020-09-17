@@ -1,7 +1,4 @@
-import $ from "jquery";
-// init Isotope
-$(document).ready(function() {
-
+export default function initSortingProduct() {
     var $grid = $('.catalogs-row').isotope({
         itemSelector: '.col-media',
         layoutMode: 'fitRows',
@@ -32,12 +29,6 @@ $(document).ready(function() {
         }
     });
 
-// bind filter button click
-//     $('.filters-button-group').on('click', 'button', function () {
-//         var filterValue = $(this).attr('data-filter');
-//         $grid.isotope({ filter: filterValue });
-//     });
-
 // bind sort button click
     $('.sort-button-group').on( 'click', 'button', function() {
 
@@ -60,5 +51,4 @@ $(document).ready(function() {
         span.toggleClass('f-icon-down f-icon-up');
 
     });
-
-});
+}

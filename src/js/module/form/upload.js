@@ -1,6 +1,4 @@
-import $ from "jquery";
-
-$(document).ready(function() {
+export default function initUpload() {
     const addImage = $('.js-upload-file');
     const removeImage = $('.js-remove-image');
     const previewBlock = $('.l-upload-preview-box');
@@ -16,7 +14,7 @@ $(document).ready(function() {
                 let reader = new FileReader();
                 reader.onload = function(e) {
                     previewBox.attr('src', e.target.result);
-                   // $('.image-title').html(input.files[0].name);
+                    // $('.image-title').html(input.files[0].name);
                 };
                 reader.readAsDataURL(input.files[i]);
             }
@@ -32,5 +30,4 @@ $(document).ready(function() {
         let item = $(el).parent();
         item.removeClass('is-load');
     }
-
-});
+}

@@ -11,6 +11,8 @@
       background: #FFE5A8;
       display: flex;
       align-items: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
       .close {
         background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.8212 20L6.91047 8.08925C6.12479 7.30358 7.30331 6.12507 8.08898 6.91074L19.9997 18.8215L31.9105 6.91074C32.6961 6.12507 33.8747 7.30358 33.089 8.08925L21.1782 20L33.089 31.9107C33.8747 32.6964 32.6961 33.8749 31.9105 33.0893L19.9997 21.1785L8.08898 33.0893C7.30331 33.8749 6.12479 32.6964 6.91047 31.9107L18.8212 20Z' fill='%23526CB3'/%3E%3C/svg%3E%0A");
         background-size: cover;
@@ -33,6 +35,10 @@
       @media (max-width: 768px) {
         font-size: 22px;
       }
+    }
+    &-content {
+      border-radius: 20px;
+      border: 0;
     }
   }
   .instructions {
@@ -267,7 +273,79 @@
     }
 
   }
-
+  &-auth {
+    .modal-dialog {
+      max-width: 520px;
+    }
+    .l-form-label {
+      max-width: 115px;
+    }
+    .l-form-control-flex {
+      &:first-child {
+        margin-bottom: 20px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+    }
+    &-btn {
+      text-align: center;
+      margin-top: 30px;
+      transition: .3s;
+        .l-btn {
+          min-width: 218px;
+        }
+    }
+    &-text {
+      font-size: 18px;
+      line-height: 34px;
+      text-align: center;
+      margin-top: 12px;
+      a {
+        text-decoration-line: underline;
+        color: #526CB3;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            color: #62ae00;
+        }
+      }
+    }
+    &-msg {
+      font-size: 14px;
+      line-height: 16px;
+      color: #DF6767;
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+  &-recovery {
+    .modal-dialog {
+      max-width: 630px;
+    }
+    .l-form-label {
+      max-width: 115px;
+    }
+    .l-form-control-flex {
+      margin-bottom: 8px;
+    }
+    &-text {
+      font-size: 14px;
+      line-height: 20px;
+      color: #404040;
+    }
+    @media (min-width: 768px) {
+      form {
+        max-width: 480px;
+        margin: auto;
+      }
+    }
+  }
+  &_l2 {
+    .modal-dialog {
+      max-width: 630px;
+    }
+  }
 
 }
 .modal-backdrop {
