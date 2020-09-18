@@ -10,7 +10,7 @@
     <title><%=title%></title>
 </head>
 <body class="drawer drawer--right">
-<header class="l-hide">
+<header>
     <div class="header-box">
         <div class="box">
             <div class="header-layout">
@@ -33,31 +33,31 @@
                 <div class="header-info">
 
                     <!--            IS AUTH-->
-                    <div class="header-scores l-hide">
-                        <div class="header-scores_text">Остаток баллов: <span class="l-bold">300</span></div>
-                        <div class="header-scores_btn">
-                            <button type="button" class="l-btn l-btn-blue">Пополнить</button>
-                        </div>
-                    </div>
-                    <div class="header-profile l-hide">
-                        <div class="header-profile-logo">
+<!--                    <div class="header-scores">-->
+<!--                        <div class="header-scores_text">Остаток баллов: <span class="l-bold">300</span></div>-->
+<!--                        <div class="header-scores_btn">-->
+<!--                            <button type="button" class="l-btn l-btn-blue">Пополнить</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="header-profile">-->
+<!--                        <div class="header-profile-logo">-->
 
-                        </div>
-                        <div class="header-profile-info">
-                            <div class="header-profile-info-name">Иванов Иван</div>
-                            <a href="#" class="header-profile_link">Личный кабинет</a>
-                        </div>
-                    </div>
+<!--                        </div>-->
+<!--                        <div class="header-profile-info">-->
+<!--                            <div class="header-profile-info-name">Иванов Иван</div>-->
+<!--                            <a href="#" class="header-profile_link">Личный кабинет</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <!--            ELSE-->
                     <div class="header-info_btn tablet-hide">
-                        <button type="button" class="l-btn l-btn_reg">Регистрация</button>
+                        <button type="button" class="l-btn l-btn_reg"  data-toggle="modal" data-target="#modalRegister">Регистрация</button>
                     </div>
 
                     <div class="header-info_btn tablet-hide">
                         <!--              IS AUTH-->
-                        <button type="button" class="l-btn l-btn_login l-btn_login_l1 l-hide">Выход</button>
+<!--                        <button type="button" class="l-btn l-btn_login l-btn_login_l1">Выход</button>-->
                         <!--              ELSE-->
-                        <button type="button" class="l-btn l-btn_login ">Вход</button>
+                        <button type="button" class="l-btn l-btn_login"  data-toggle="modal" data-target="#modalAuth">Вход</button>
                     </div>
                     <div class="header-info-phone tablet-hide">
                         <div class="header-info-phone_num">8 (800) 945 85 76</div>
@@ -71,34 +71,34 @@
                     </button>
                     <nav class="drawer-nav header-drawer" role="navigation">
 
-                        <div class="header-info-box">
-                            <div class="header-profile">
-                                <div class="header-profile-logo">
+<!--                        <div class="header-info-box">-->
+<!--                            <div class="header-profile">-->
+<!--                                <div class="header-profile-logo">-->
 
-                                </div>
-                                <div class="header-profile-info">
-                                    <div class="header-profile-info-name">Иванов Иван</div>
-                                    <a href="#" class="header-profile_link">Личный кабинет</a>
-                                </div>
-                            </div>
-                            <div class="header-scores">
-                                <div class="header-scores_text">Остаток баллов: <span class="l-bold">300</span></div>
-                                <div class="header-scores_btn">
-                                    <button type="button" class="l-btn l-btn-blue">Пополнить</button>
-                                </div>
-                            </div>
+<!--                                </div>-->
+<!--                                <div class="header-profile-info">-->
+<!--                                    <div class="header-profile-info-name">Иванов Иван</div>-->
+<!--                                    <a href="#" class="header-profile_link">Личный кабинет</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="header-scores">-->
+<!--                                <div class="header-scores_text">Остаток баллов: <span class="l-bold">300</span></div>-->
+<!--                                <div class="header-scores_btn">-->
+<!--                                    <button type="button" class="l-btn l-btn-blue">Пополнить</button>-->
+<!--                                </div>-->
+<!--                            </div>-->
 
-                        </div>
+<!--                        </div>-->
                         <!--            ELSE-->
-                        <div class="header-info_btn l-hide">
-                            <button type="button" class="l-btn l-btn_reg">Регистрация</button>
+                        <div class="header-info_btn">
+                            <button type="button" class="l-btn l-btn_reg" data-toggle="modal" data-target="#modalRegister">Регистрация</button>
                         </div>
 
                         <div class="header-info_btn">
                             <!--              IS AUTH-->
-                            <button type="button" class="l-btn l-btn_login l-btn_login_l1 ">Выход</button>
+<!--                            <button type="button" class="l-btn l-btn_login l-btn_login_l1 ">Выход</button>-->
                             <!--              ELSE-->
-                            <button type="button" class="l-btn l-btn_login l-hide">Вход</button>
+                            <button type="button" class="l-btn l-btn_login"  data-toggle="modal" data-target="#modalAuth">Вход</button>
                         </div>
                         <div class="drawer-menu">
                             <div class="header-menu-item">
