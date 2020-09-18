@@ -79,11 +79,17 @@
       background: #DCE7FF;
       border-radius: 3px;
       padding: 14px 10px;
+      border: 0;
       transition: .3s;
-      &.active,
-      &:hover {
+      &.active {
         background: #526CB3;
         color: #FFFFFF;
+      }
+      &:hover {
+        background: #FFD949;
+        &.active {
+          background: #526CB3;
+        }
       }
     }
     &_l3 {
