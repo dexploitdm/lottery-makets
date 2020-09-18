@@ -69,6 +69,11 @@
     background: #DF6767;
     color: #FFFFFF !important;
   }
+  &.is-not {
+    .l-form-control-msg {
+      display: none;
+    }
+  }
 }
 
 .form-reg {

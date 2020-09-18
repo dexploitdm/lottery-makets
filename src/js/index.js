@@ -24,6 +24,7 @@ import initCollapse from './module/collapse';
 import initUpload from './module/form/upload';
 import initFlatpickr from './module/form/flatpickr';
 import initMask from './module/form/mask';
+import initValidRegistration from './module/form/validRegistration';
 
 $(document).ready(function() {
     $('.drawer').drawer();
@@ -39,6 +40,7 @@ $(document).ready(function() {
     initUpload();
     initFlatpickr();
     initMask();
+    initValidRegistration();
 
 });
 
