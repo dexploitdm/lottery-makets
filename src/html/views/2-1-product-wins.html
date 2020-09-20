@@ -183,6 +183,6 @@ title: "Розыгрыш конкурсов | Продукт"
         </div>
     </div>
 </section>
-
+    <%= _.template(require('./../includes/modals/auth.html').default)(data) %>
 </main>
 <%= _.template(require('./../includes/components/footer-product-modal.html').default)(data) %>

@@ -59,7 +59,6 @@ export default function initValidRegistration() {
 
     //Обязательное поле
     string.focusout(function() {
-        console.log(string.val().length)
         string.val().length > 1 ? string.parent().parent().removeClass('is-error') : string.parent().parent().addClass('is-error');
     });
 }
