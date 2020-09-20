@@ -11,8 +11,10 @@ body {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-left: 30px;
-  padding-right: 30px;
+  @media (max-width: 1480px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   @media (max-width: 986px) {
     padding-left: 20px;
     padding-right: 20px;
