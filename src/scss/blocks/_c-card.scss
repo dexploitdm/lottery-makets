@@ -5,7 +5,9 @@
   box-sizing: border-box;
 
   &_l1 {
-    margin-left: 20px;
+    @media (min-width: 986px) {
+      margin-left: 20px;
+    }
   }
   &-head {
     font-size: 24px;
@@ -124,6 +126,33 @@
       font-weight: 500;
       margin-right: 24px;
       transition: .3s;
+    }
+  }
+  @media (max-width: 768px) {
+    &-total {
+      &-input {
+        max-width: 100px;
+      }
+    }
+  }
+  @media (max-width: 660px) {
+    &-layout {
+      padding: 20px;
+    }
+    &-items,
+    &-total {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    &-total{
+      &:first-child {
+        margin-bottom: 10px;
+      }
+      &-input {
+        padding-top: 4px;
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
 }

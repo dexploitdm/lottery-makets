@@ -21,6 +21,7 @@ title: "Розыгрыш конкурсов | ЛК | Баланс"
                     <a class="nav-link l-icon-m l-icon-m_question" href="#">Вопрос</a>
                 </div>
             </div>
+
             <div class="info-content">
 
                 <div class="c-card">
@@ -66,14 +67,37 @@ title: "Розыгрыш конкурсов | ЛК | Баланс"
                                     </div>
                                 </div>
                             </div>
+                            <div class="method-pay">
+                                <div class="method-pay-title">Способ оплаты:</div>
+                                <div class="method-pay-box">
+                                    <div class="method-pay-box-item">
+                                        <img src="img/pay/visa.png">
+                                    </div>
+                                    <div class="method-pay-box-item">
+                                        <img src="img/pay/mc.png">
+                                    </div>
+                                    <div class="method-pay-box-item">
+                                        <img src="img/pay/qiwi.png">
+                                    </div>
+                                    <div class="method-pay-box-item">
+                                        <img src="img/pay/ya.png">
+                                    </div>
+                                    <div class="method-pay-box-item">
+                                        <img src="img/pay/wm.png">
+                                    </div>
+                                </div>
+                                <div class="method-pay-btn">
+                                    <button type="button" class="l-btn l-btn-orange">Купить</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
             </div>
-            <div class="info-right-sidebar">
 
+            <div class="info-right-sidebar">
 
                 <div class="c-card">
                     <div class="c-card-box">
@@ -81,7 +105,6 @@ title: "Розыгрыш конкурсов | ЛК | Баланс"
                         <div class="c-card-content">
                             <div class="c-card-over l-scrollbar">
                                 <div class="stickers-col">
-
 
                                     <%= _.template(require('./../includes/stickers/stickers-box.html').default)(data) %>
 
