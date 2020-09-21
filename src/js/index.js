@@ -27,6 +27,7 @@ import initUpload from './module/form/upload';
 import initFlatpickr from './module/form/flatpickr';
 import initMask from './module/form/mask';
 import initValidRegistration from './module/form/validRegistration';
+import initSocialTrigger from './module/form/socialTrigger';
 
 $(document).ready(function() {
     $('.drawer').drawer();
@@ -44,5 +45,6 @@ $(document).ready(function() {
     initFlatpickr();
     initMask();
     initValidRegistration();
+    initSocialTrigger();
 });
 

@@ -39,6 +39,11 @@
     max-width: 170px;
     width: 100%;
   }
+  &-desc {
+    font-size: 14px;
+    line-height: 28px;
+    color: #838383;
+  }
   @media (max-width: 768px) {
     &-control {
       &-flex {
