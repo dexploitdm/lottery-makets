@@ -10,6 +10,7 @@
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
+    "baguettebox.js": "^1.11.1",
     "bootstrap": "^4.5.2",
     "flatpickr": "^4.6.6",
     "isotope-layout": "^3.0.6",

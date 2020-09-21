@@ -9,6 +9,8 @@ window.isotope = require("isotope-layout/dist/isotope.pkgd");
 const flatpickr = require("flatpickr");
 const mask = require("jquery-mask-plugin");
 
+import baguetteBox from 'baguettebox.js';
+
 import './module/slider.js';
 
 
@@ -28,6 +30,7 @@ import initValidRegistration from './module/form/validRegistration';
 
 $(document).ready(function() {
     $('.drawer').drawer();
+    baguetteBox.run('.gallery');
     initSelect();
     initStickers();
     initSortingProduct();
@@ -41,6 +44,5 @@ $(document).ready(function() {
     initFlatpickr();
     initMask();
     initValidRegistration();
-
 });
 
