@@ -194,7 +194,11 @@ footer {
       padding-top: 20px;
     }
     &-payment {
-      justify-content: center;
+      display: block;
+      padding-bottom: 12px;
+      &-methods {
+        justify-content: center;
+      }
     }
   }
 
