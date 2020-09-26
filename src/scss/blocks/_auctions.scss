@@ -23,6 +23,9 @@
     row-gap: 16px;
     padding: 16px 20px;
     transition: .3s;
+    @media (max-width: 786px) {
+      grid-template-columns: 1fr;
+    }
   }
   &-box {
     padding: 16px 35px;
