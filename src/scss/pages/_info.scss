@@ -127,6 +127,9 @@
     @media (min-width: 986px) {
       margin-left: 20px;
     }
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 }
 .panel-default {
