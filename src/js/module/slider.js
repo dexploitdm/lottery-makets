@@ -7,12 +7,12 @@ $(document).ready(function() {
 })
 
 function initSliderHome() {
-
     var stickersSlider = new Swiper('.stickers-slider', {
         slidesPerView: 1,
         spaceBetween: 55,
         preventClicks: false,
         preventClicksPropagation: false,
+        loop: true,
         navigation: {
             nextEl: '.next',
             prevEl: '.prev'
@@ -108,6 +108,6 @@ function initSliderStickersLK() {
 }
 
 function translateVal(el) {
-    var progress = el.style.transform.match(/translate3d\((.+)px,(.+)px,(.+)px\)/);
-    return progress[1];
+  //  var progress = el.style.transform.match(/translate3d\((.+)px,(.+)px,(.+)px\)/);
+    //return progress[1];
 }
