@@ -64,6 +64,7 @@ function initSliderWins() {
         slidesPerView: 1,
         spaceBetween: 55,
         preventClicks: false,
+        loop: true,
         preventClicksPropagation: false,
         navigation: {
             nextEl: '.next',
@@ -89,6 +90,7 @@ function initSliderStickersLK() {
         slidesPerView: 3,
         spaceBetween: 10,
         preventClicks: false,
+        loop: true,
         preventClicksPropagation: false,
         navigation: {
             nextEl: '.next',
