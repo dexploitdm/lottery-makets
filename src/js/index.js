@@ -28,6 +28,7 @@ import initFlatpickr from './module/form/flatpickr';
 import initMask from './module/form/mask';
 import initValidRegistration from './module/form/validRegistration';
 import initSocialTrigger from './module/form/socialTrigger';
+import initCatalogs from './module/catalogs';
 
 $(document).ready(function() {
     $('.drawer').drawer();
@@ -46,5 +47,6 @@ $(document).ready(function() {
     initMask();
     initValidRegistration();
     initSocialTrigger();
+    initCatalogs();
 });
 

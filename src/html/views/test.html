@@ -1,0 +1,133 @@
+<% var data = {
+title: "Розыгрыш конкурсов | Главная"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main role="main">
+
+    <section class="catalogs">
+        <div class="box">
+            <div class="catalogs-layout">
+                <div class="catalogs-filter btn-group sort-button-group">
+                    <button data-sort-direction="desc" data-sort-value="popular" type="button" class="catalogs-filter-item">Популярные <span class="f-icon f-icon-down"></span></button>
+                    <button data-sort-direction="desc" data-sort-value="date" type="button" class="catalogs-filter-item">Ближайшие <span class="f-icon f-icon-down"></span></button>
+                    <button data-sort-direction="desc" data-sort-value="repost" type="button" class="catalogs-filter-item">Репост <span class="f-icon f-icon-down"></span></button>
+                    <button data-sort-direction="desc" data-sort-value="best" type="button" class="catalogs-filter-item">По ставке <span class="f-icon f-icon-down"></span></button>
+                    <button data-sort-direction="desc" data-sort-value="places" type="button" class="catalogs-filter-item">По местам <span  class="f-icon f-icon-down"></span></button>
+                </div>
+                <div class="catalogs-box js-cat-view" data-view-count="15" data-count="15">
+                    <div class="container-fluid">
+                        <div class="catalogs-row">
+                            <div class="catalogs-item col-media " data-popular="30" data-repost="34" data-best="2" data-places="18">1</div>
+                            <div class="catalogs-item col-media " data-popular="24" data-repost="34" data-best="2" data-places="18">2</div>
+                            <div class="catalogs-item col-media " data-popular="23" data-repost="21" data-best="2" data-places="18">3</div>
+                            <div class="catalogs-item col-media " data-popular="1" data-repost="12" data-best="2" data-places="18">4</div>
+                            <div class="catalogs-item col-media " data-popular="12" data-repost="454" data-best="2" data-places="18">5</div>
+                            <div class="catalogs-item col-media " data-popular="23" data-repost="66" data-best="2" data-places="18">6</div>
+                            <div class="catalogs-item col-media " data-popular="2" data-repost="66" data-best="2" data-places="18">7</div>
+                            <div class="catalogs-item col-media " data-popular="34" data-repost="66" data-best="2" data-places="18">8</div>
+                            <div class="catalogs-item col-media " data-popular="45" data-repost="66" data-best="2" data-places="18">9</div>
+                            <div class="catalogs-item col-media " data-popular="56" data-repost="66" data-best="2" data-places="18">10</div>
+                            <div class="catalogs-item col-media " data-popular="24" data-repost="66" data-best="2" data-places="18">12</div>
+                            <div class="catalogs-item col-media " data-popular="56" data-repost="66" data-best="2" data-places="18">13</div>
+                            <div class="catalogs-item col-media " data-popular="56" data-repost="66" data-best="2" data-places="18">14</div>
+                            <div class="catalogs-item col-media " data-popular="3" data-repost="66" data-best="2" data-places="18">15</div>
+                            <div class="catalogs-item col-media " data-popular="34" data-repost="66" data-best="2" data-places="18">16</div>
+                            <div class="catalogs-item col-media " data-popular="45" data-repost="66" data-best="2" data-places="18">17</div>
+                            <div class="catalogs-item col-media " data-popular="3" data-repost="66" data-best="2" data-places="18">18</div>
+                            <div class="catalogs-item col-media " data-popular="234" data-repost="66" data-best="2" data-places="18">19</div>
+                            <div class="catalogs-item col-media " data-popular="45" data-repost="66" data-best="2" data-places="18">20</div>
+                            <div class="catalogs-item col-media " data-popular="33" data-repost="66" data-best="2" data-places="18">21</div>
+                            <div class="catalogs-item col-media " data-popular="34" data-repost="66" data-best="2" data-places="18">22</div>
+                            <div class="catalogs-item col-media " data-popular="222" data-repost="66" data-best="2" data-places="18">23</div>
+                            <div class="catalogs-item col-media " data-popular="22" data-repost="66" data-best="2" data-places="18">24</div>
+                            <div class="catalogs-item col-media " data-popular="56" data-repost="66" data-best="2" data-places="18">25</div>
+                            <div class="catalogs-item col-media " data-popular="43" data-repost="66" data-best="2" data-places="18">26</div>
+                            <div class="catalogs-item col-media " data-popular="87" data-repost="66" data-best="2" data-places="18">27</div>
+                            <div class="catalogs-item col-media " data-popular="78" data-repost="66" data-best="2" data-places="18">28</div>
+                            <div class="catalogs-item col-media " data-popular="67" data-repost="66" data-best="2" data-places="18">29</div>
+                            <div class="catalogs-item col-media " data-popular="56" data-repost="66" data-best="2" data-places="18">30</div>
+                            <div class="catalogs-item col-media " data-popular="564" data-repost="66" data-best="2" data-places="18">31</div>
+                            <div class="catalogs-item col-media " data-popular="34" data-repost="66" data-best="2" data-places="18">32</div>
+                            <div class="catalogs-item col-media " data-popular="45" data-repost="66" data-best="2" data-places="18">33</div>
+                            <div class="catalogs-item col-media " data-popular="34" data-repost="66" data-best="2" data-places="18">34</div>
+                            <div class="catalogs-item col-media " data-popular="23" data-repost="66" data-best="2" data-places="18">35</div>
+                            <div class="catalogs-item col-media " data-popular="111" data-repost="66" data-best="2" data-places="18">36</div>
+                            <div class="catalogs-item col-media " data-popular="231" data-repost="66" data-best="2" data-places="18">37</div>
+                            <div class="catalogs-item col-media " data-popular="34" data-repost="66" data-best="2" data-places="18">38</div>
+                            <div class="catalogs-item col-media " data-popular="78" data-repost="66" data-best="2" data-places="18">39</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">40</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">41</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">42</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">43</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">44</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">45</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">46</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">47</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">48</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">49</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">50</div>
+                            <div class="catalogs-item col-media " data-popular="57" data-repost="66" data-best="2" data-places="18">51</div>
+
+                        </div>
+                    </div>
+
+                    <style>
+                        .catalogs-item.col-media  {
+                            /*float: left;*/
+                            width: 300px;
+                            height: 200px;
+                            margin: 5px;
+                            padding: 10px;
+                            background-color: aliceblue;
+                        }
+                        .catalogs-row {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                        }
+
+                    </style>
+
+                    <div class="catalogs-more">
+                        <button type="button" class="l-btn l-btn-blue-dark l-btn-more js-more">Показать еще</button>
+                    </div>
+                    <div class="paginate">
+                        <div class="paginate-pages">
+                            <div class="paginate-pages-box">
+                                <button type="button" class="paginate-pages_prev disabled">Предедущая</button>
+                                <button type="button" class="paginate-pages_next">Следующая</button>
+                            </div>
+                            <div class="paginate-pages-num">
+                                <div class="page-num active">1</div>
+                                <div class="page-num"><span>,</span>2</div>
+                                <div class="page-num"><span>,</span>3</div>
+                                <div class="page-num"><span>,</span>4</div>
+                                <div class="page-num"><span>,</span>5</div>
+                                <div class="page-num"><span>,</span>...</div>
+                                <div class="page-num"><span>,</span>32</div>
+                            </div>
+                        </div>
+                        <div class="paginate-count">
+                            <div class="paginate-count-text">Показывать по: </div>
+                            <div class="paginate-count-set">
+                                <button type="button" class="set-count active">15</button>
+                                <button type="button" class="set-count">30</button>
+                                <button type="button" class="set-count">45</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
