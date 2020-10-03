@@ -65,11 +65,13 @@ export default function initSortingProduct() {
             state = true
         }
         if(type !== 'date'){
-            sortingByPrice(type, state);
+            sortingByNumber(type, state);
+        } else {
+            sortingByDate(state);
         }
     });
 
-    function sortingByPrice(type, state){
+    function sortingByNumber(type, state){
         var items = document.querySelectorAll('.catalogs-item')
         let arr = []
         Array.from(items).sort(function(a, b) {
@@ -87,5 +89,38 @@ export default function initSortingProduct() {
         box.html()
         box.append(arr)
     }
+    var items2 = $(".catalogs-item");
+    items2.each(function() {
+        // Convert the string in 'data-event-date' attribute to a more
+        // standardized date format
+        var BCDate = $(this).attr("data-date");
+        //console.log(BCDate);
+        /*console.log(BCDate);
+        var standardDate = BCDate[1]+" "+BCDate[0]+" "+BCDate[2];*/
+        var standartDate = new Date(BCDate).getTime();
+        $(this).attr("data-date", standartDate);
+    });
+
+    function sortingByDate(state){
+        // var items = document.querySelectorAll('.catalogs-item')
+        // let arr = [];
+        // Array.from(items).sort(function(a, b) {
+        //     // using ~~ to cast the value to a number instead of a string
+        //     a = ~~a.getAttribute('data-date');
+        //     b = ~~b.getAttribute('data-date');
+        //     let sortData;
+        //     state ? sortData = b - a : sortData = a - b
+        //     return sortData;
+        // }).forEach(function(n, i) {
+        //     n.style.order = i
+        //
+        //     arr.push(n)
+        // })
+        // box.html()
+        // box.append(arr)
+    }
+
+
+
 
 }
