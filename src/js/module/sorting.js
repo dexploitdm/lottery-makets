@@ -51,12 +51,12 @@ export default function initSortingProduct() {
 //         span.toggleClass('f-icon-down f-icon-up');
 //
 //     });
-    const btnPop = $('.catalogs-filter button'),
+    const btnSort = $('.catalogs-filter button'),
         box = $('.catalogs-row');
 
-    btnPop.click(function() {
+    btnSort.click(function() {
         const type = $(this).attr('data-sort-value');
-        btnPop.not($(this)).removeClass('active');
+        btnSort.not($(this)).removeClass('active');
         let state = false;
 
         $(this).hasClass('active') ? $(this).removeClass('active') : $(this).addClass('active');

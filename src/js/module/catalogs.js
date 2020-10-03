@@ -8,7 +8,7 @@ export default function initCatalogs() {
     const all = $(".catalogs-item").length;
     console.log(all + ' всего')
     $('.catalogs-item').hide();
-    $('.catalogs-item:lt(' + (standart -1) + ')').show();
+    $('.catalogs-item:lt(' + (standart) + ')').show();
 
     if(more.length > 0){
         more.click(function() {
@@ -20,9 +20,9 @@ export default function initCatalogs() {
     function viewCatalogs() {
         let viewCount = Number(currentView.attr('data-view-count')) + Number(currentView.attr('data-count'));
         currentView.attr('data-view-count',viewCount);
-        $('.catalogs-item:lt(' + (viewCount -1) + ')').show();
+        $('.catalogs-item:lt(' + (viewCount) + ')').fadeIn();
 
-        if(viewCount > all){
+        if(viewCount >= all){
             more.attr('disabled','disabled');
         }
         endPage();
@@ -35,7 +35,7 @@ export default function initCatalogs() {
         currentView.attr('data-count', dataCount)
         currentView.attr('data-view-count', dataCount)
         $('.catalogs-item').hide();
-        $('.catalogs-item:lt(' + (dataCount -1) + ')').show();
+        $('.catalogs-item:lt(' + (dataCount) + ')').fadeIn();
 
         if(all > dataCount) {
             more.removeAttr('disabled');
