@@ -33,8 +33,14 @@ export default function initCatalogs() {
         btnCount.removeClass('active')
         $(this).addClass('active')
         currentView.attr('data-count', dataCount)
+        currentView.attr('data-view-count', dataCount)
         $('.catalogs-item').hide();
         $('.catalogs-item:lt(' + (dataCount -1) + ')').show();
+
+        if(all > dataCount) {
+            more.removeAttr('disabled');
+        }
+
         endPage();
     });
 
