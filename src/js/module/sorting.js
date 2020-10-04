@@ -75,7 +75,6 @@ export default function initSortingProduct() {
         var items = document.querySelectorAll('.catalogs-item')
         let arr = []
         Array.from(items).sort(function(a, b) {
-            // using ~~ to cast the value to a number instead of a string
             a = ~~a.getAttribute('data-' + type);
             b = ~~b.getAttribute('data-' + type);
             let sortData;
@@ -98,29 +97,25 @@ export default function initSortingProduct() {
         /*console.log(BCDate);
         var standardDate = BCDate[1]+" "+BCDate[0]+" "+BCDate[2];*/
         var standartDate = new Date(BCDate).getTime();
-        $(this).attr("data-date", standartDate);
+       // $(this).attr("data-date", standartDate);
     });
 
     function sortingByDate(state){
-        // var items = document.querySelectorAll('.catalogs-item')
-        // let arr = [];
-        // Array.from(items).sort(function(a, b) {
-        //     // using ~~ to cast the value to a number instead of a string
-        //     a = ~~a.getAttribute('data-date');
-        //     b = ~~b.getAttribute('data-date');
-        //     let sortData;
-        //     state ? sortData = b - a : sortData = a - b
-        //     return sortData;
-        // }).forEach(function(n, i) {
-        //     n.style.order = i
-        //
-        //     arr.push(n)
-        // })
-        // box.html()
-        // box.append(arr)
+         var itemsDate = document.querySelectorAll('.catalogs-item')
+         let arr = [];
+        Array.from(itemsDate).sort(function(a, b) {
+            a = new Date($(a).attr('data-date'));
+            b = new Date($(b).attr('data-date'));
+            let sortData;
+            state ? sortData = a - b : sortData = b - a
+            return sortData;
+        }).forEach(function(n, i) {
+            n.style.order = i
+
+            arr.push(n)
+        })
+        box.html()
+        box.append(arr)
     }
-
-
-
 
 }
