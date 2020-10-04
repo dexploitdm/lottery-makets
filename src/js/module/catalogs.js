@@ -6,11 +6,13 @@ export default function initCatalogs() {
     // console.log(currentView)
 
     const all = $(".catalogs-item").length;
-    console.log(all + ' всего')
-    $('.catalogs-item').hide();
-    $('.catalogs-item:lt(' + (standart) + ')').show();
+
+
 
     if(more.length > 0){
+        console.log(all + ' всего')
+        $('.catalogs-item').hide();
+        $('.catalogs-item:lt(' + (standart) + ')').show();
         more.click(function() {
             viewCatalogs();
         });
@@ -45,9 +47,9 @@ export default function initCatalogs() {
     });
 
     function endPage(){
-        let end = Math.ceil((all - Number(currentView.attr('data-view-count'))) / Number(currentView.attr('data-count')) + 1);
-        console.log(all + ' / ' +Number(currentView.attr('data-view-count')))
-        console.log(end)
+        // let end = Math.ceil((all - Number(currentView.attr('data-view-count'))) / Number(currentView.attr('data-count')) + 1);
+        // console.log(all + ' / ' +Number(currentView.attr('data-view-count')))
+        // console.log(end)
     }
 
 }
