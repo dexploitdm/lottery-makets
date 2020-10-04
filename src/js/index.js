@@ -32,6 +32,7 @@ import initCatalogs from './module/catalogs';
 import initHelperLink from './module/helperLink';
 import initValidate from './module/validate';
 import initStateCheckbox from './module/form/stateCheckbox';
+import initTabs from './module/tabs';
 
 $(document).ready(function() {
     $('.drawer').drawer();
@@ -54,5 +55,6 @@ $(document).ready(function() {
     initHelperLink();
     initValidate();
     initStateCheckbox();
+    initTabs();
 });
 
