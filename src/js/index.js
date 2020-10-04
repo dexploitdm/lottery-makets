@@ -33,6 +33,7 @@ import initHelperLink from './module/helperLink';
 import initValidate from './module/validate';
 import initStateCheckbox from './module/form/stateCheckbox';
 import initTabs from './module/tabs';
+import initViewElement from './module/viewElement';
 
 $(document).ready(function() {
     $('.drawer').drawer();
@@ -56,5 +57,6 @@ $(document).ready(function() {
     initValidate();
     initStateCheckbox();
     initTabs();
+    initViewElement();
 });
 
