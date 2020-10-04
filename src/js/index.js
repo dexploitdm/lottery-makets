@@ -30,6 +30,8 @@ import initValidRegistration from './module/form/validRegistration';
 import initSocialTrigger from './module/form/socialTrigger';
 import initCatalogs from './module/catalogs';
 import initHelperLink from './module/helperLink';
+import initValidate from './module/validate';
+import initStateCheckbox from './module/form/stateCheckbox';
 
 $(document).ready(function() {
     $('.drawer').drawer();
@@ -50,5 +52,7 @@ $(document).ready(function() {
     initSocialTrigger();
     initCatalogs();
     initHelperLink();
+    initValidate();
+    initStateCheckbox();
 });
 

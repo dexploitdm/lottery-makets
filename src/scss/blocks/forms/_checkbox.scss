@@ -123,4 +123,12 @@
       outline: 0;
     }
   }
+  &.is-error {
+    label {
+      color: #df6767;
+      a {
+        color: #df6767;
+      }
+    }
+  }
 }
