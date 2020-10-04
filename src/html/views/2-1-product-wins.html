@@ -84,19 +84,20 @@ title: "Розыгрыш конкурсов | Продукт"
         <div class="places">
             <h2 class="places-title">Занять место</h2>
             <div class="places-box">
-                <div class="places-layout">
+                <div class="places-layout js-el-view" data-view-count="15" data-count="15">
 
-<!--                    <div class="places-item" data-place="5">-->
-<!--                        <div data-c="false">-->
-<!--                            <div class="number"><span>5</span></div>-->
-<!--                            <img src="img/demo/face1.png">-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <!--                    <div class="places-item" data-place="5">-->
+                    <!--                        <div data-c="false">-->
+                    <!--                            <div class="number"><span>5</span></div>-->
+                    <!--                            <img src="img/demo/face1.png">-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <%= _.template(require('./../includes/products/places.html').default)(data) %>
 
                 </div>
 
                 <div class="places-more">
-                    <button type="button" class="l-btn l-btn-blue-dark l-btn-more js-more">Показать еще</button>
+                    <button type="button" class="l-btn l-btn-blue-dark l-btn-more js-more js-view-more">Показать еще</button>
                 </div>
 
 
@@ -120,9 +121,9 @@ title: "Розыгрыш конкурсов | Продукт"
                     <div class="paginate-count">
                         <div class="paginate-count-text">Показывать по: </div>
                         <div class="paginate-count-set">
-                            <button type="button" class="set-count js-count-s active" data-count="15">15</button>
-                            <button type="button" class="set-count js-count-s" data-count="30">30</button>
-                            <button type="button" class="set-count js-count-s" data-count="45">45</button>
+                            <button type="button" class="set-count active" data-count="15">15</button>
+                            <button type="button" class="set-count" data-count="30">30</button>
+                            <button type="button" class="set-count" data-count="45">45</button>
                         </div>
                     </div>
                 </div>
@@ -185,4 +186,4 @@ title: "Розыгрыш конкурсов | Продукт"
 </section>
     <%= _.template(require('./../includes/modals/auth.html').default)(data) %>
 </main>
-<%= _.template(require('./../includes/components/footer-product-modal.html').default)(data) %>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
