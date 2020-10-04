@@ -29,6 +29,7 @@ import initMask from './module/form/mask';
 import initValidRegistration from './module/form/validRegistration';
 import initSocialTrigger from './module/form/socialTrigger';
 import initCatalogs from './module/catalogs';
+import initHelperLink from './module/helperLink';
 
 $(document).ready(function() {
     $('.drawer').drawer();
@@ -48,5 +49,6 @@ $(document).ready(function() {
     initValidRegistration();
     initSocialTrigger();
     initCatalogs();
+    initHelperLink();
 });
 

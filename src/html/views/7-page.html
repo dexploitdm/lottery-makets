@@ -8,7 +8,7 @@ title: "Розыгрыш конкурсов | Помощь"
     <div class="box">
         <h1 class="info-title">Помощь</h1>
         <div class="info-layout">
-            <ul class="sidebar sidebar_l2 nav nav-tabs" id="myTab" role="tablist">
+            <ul class="sidebar sidebar_l2 nav nav-tabs js-helper-block" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="terms-tab" data-toggle="tab" href="#terms" role="tab" aria-controls="terms" aria-selected="true">Пользовательское соглашение</a>
                 </li>
@@ -26,10 +26,10 @@ title: "Розыгрыш конкурсов | Помощь"
             <!-- Tab panes -->
             <div class="info-content info-content_l2 tab-content">
                 <div class="tab-pane active" id="terms" role="tabpanel" aria-labelledby="terms-tab">
-                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                    terms  <%=_.template(require('./../includes/text/text1.html').default)(data) %>
                 </div>
                 <div class="tab-pane" id="algorithm" role="tabpanel" aria-labelledby="algorithm-tab">
-                    <%= _.template(require('./../includes/text/text1.html').default)(data) %>
+                    algorithm <%= _.template(require('./../includes/text/text1.html').default)(data) %>
                 </div>
                 <div class="tab-pane" id="promotion" role="tabpanel" aria-labelledby="promotion-tab">
                     <%= _.template(require('./../includes/text/text1.html').default)(data) %>
